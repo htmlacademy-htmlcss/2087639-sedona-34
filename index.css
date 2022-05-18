@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), url(./fonts/ptsans-400.woff2) format("woff2");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans"), url(./fonts/ptsans-700.woff2) format("woff2");
+}
+* {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.page {
+  max-width: 1280px;
+  background: #f2f2f2;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  height: 65px;
+  background: #fff;
+  margin: 0 auto;
+  align-items: center;
+}
+.header__logo{
+  height: 70px;
+  margin-left: 70px;
+  margin-right: 47px;;
+}
+.header__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 34px;
+  max-width: 390px;
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+  .header__link a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+.header__icons{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 311.11px;
+}
+.header__icons li{
+  margin-right: 23.49px;
+}
+.header__icons li:last-child{
+  margin-right: 0;
+}
+.header__button{
+  text-decoration: none;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-left: 17.87px;
+  
+}
+.header__textBtn{
+  padding: 9px 15px 8px 15px;
+  background: #756157;
+  border-radius: 4px;
+  width: 160px;
+  box-sizing: border-box;
+  text-align: center;
+}

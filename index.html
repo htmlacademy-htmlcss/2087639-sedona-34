@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+  <body class="page">
+    <header class="header">
+      <img src="./images/logo.svg" class="header__logo" alt="">
+      <nav class="header__menu">
+        <ul class="header__links">
+          <li class="header__link"><a href="#">Главная</a></li>
+          <li class="header__link"><a href="#">О Седоне</a></li>
+          <li class="header__link"><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <ul class="header__icons">
+        <li><img src="./images/search.png"></li>
+        <li><img src="./images/heart.png"></li>
+      </ul>
+      <a href="#" class="header__button"><div class="header__textBtn">КНОПКА</div></a>
+    </header>
   </body>
 </html>
