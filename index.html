@@ -1,27 +1,135 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body class="page">
-    <header class="header">
-      <img src="./images/logo.svg" class="header__logo" alt="">
-      <nav class="header__menu">
-        <ul class="header__links">
-          <li class="header__link"><a href="#">Главная</a></li>
-          <li class="header__link"><a href="#">О Седоне</a></li>
-          <li class="header__link"><a href="#">Гостиницы</a></li>
-        </ul>
-      </nav>
-      <ul class="header__icons">
-        <li><img src="./images/search.png"></li>
-        <li><img src="./images/heart.png"></li>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <img src="./images/logo.svg" class="header__logo" alt="Логотип сайта">
+    <nav class="header__menu">
+      <ul class="header__links">
+        <li class="header__link"><a href="#">Главная</a></li>
+        <li class="header__link"><a href="#">О Седоне</a></li>
+        <li class="header__link"><a href="#">Гостиницы</a></li>
       </ul>
-      <a href="#" class="header__button"><div class="header__textBtn">КНОПКА</div></a>
-    </header>
-  </body>
+    </nav>
+    <ul class="header__icons">
+      <li><img src="./images/search.png"></li>
+      <li>
+        <img src="./images/heart.png">
+        <div class="likesCounter"></div>
+      </li>
+    </ul>
+    <button class="header__button">Хочу сюда!</button>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="#" alt="Тут будет Велком">
+      <img src="#" alt="Тут что-то другое">
+      <img src="#" alt="логотип седона">
+      <img src="#" alt="и белая штуковина">
+      <div class="hero__introduction">
+        <h1>Седона — небольшой городок в Аризоне,
+          заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+    </section>
+    <section class="benefits">
+      <ul class="benefits__grid">
+        <li>
+          <h2>Настоящий городок</h2>
+          <p>— №1 —</p>
+          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </li>
+        <li>
+          <img src="#" alt="Картинка цветастая">
+        </li>
+        <li></li>
+        <li>
+          <img src="" alt="" class="benefits__logo">
+          <h3>Жильё</h3>
+          <p>Рекомендуем пожить в настоящем мотеле,
+            всё как в кино!</p>
+        </li>
+        <li>
+          <img src="" alt="" class="benefits__logo">
+          <h3>Еда</h3>
+          <p>Всегда заказывайте
+            топовый фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+        <li>
+          <img src="" alt="" class="benefits__logo">
+          <h3>Сувениры</h3>
+          <p>Не только китайского,
+            но и настоящего местного производства!</p>
+        </li>
+        <li>
+          <img src="#" alt="Картинка цветастая">
+        </li>
+        <li>
+
+        </li>
+        <li>
+          <h2>Там есть мост дьявола</h2>
+          <p>— №2 —</p>
+          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </li>
+        <li>
+          <h2>Небольшая площадь</h2>
+          <p>— №3 —</p>
+          <p>Все достопримечательности находятся очень близко</p>
+        </li>
+        <li>
+          <h2>Красивая
+            дорога</h2>
+          <p>— №4 —</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li>
+          <h2>Мало
+            туристов</h2>
+          <p>— №5 —</p>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ul>
+    </section>
+    <section class="find-hotel">
+      <h4>Заинтересовались?</h4>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+      </p>
+      <button>ПОИСК ГОСТИНИЦЫ В седоне</button>
+    </section>
+    <section class="subscribe">
+      <h5></h5>
+      <p></p>
+      <form>
+        <input type="email" value="Ваш e-mail">
+        <input type="submit" value="Подписаться">
+      </form>
+    </section>
+    <footer>
+      <div class="footer__line">
+        <ul>
+          <li>
+            <ul class="footer__icons">
+              <li><img src="#" alt="vkontakte"></li>
+              <li><img src="#" alt="telegram"></li>
+              <li><img src="#" alt="youtube"></li>
+            </ul>
+          </li>
+          <li>+7 (812) 812-12-12</li>
+          <li><img src="#" alt="футер лого"></li>
+        </ul>
+      </div>
+
+    </footer>
+  </main>
+</body>
+
 </html>

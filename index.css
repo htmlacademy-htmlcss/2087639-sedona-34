@@ -67,7 +67,7 @@
   margin-right: 0;
 }
 .header__button{
-  text-decoration: none;
+  border: none;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -76,13 +76,11 @@
   color: #FFFFFF;
   text-transform: uppercase;
   margin-left: 17.87px;
-  
-}
-.header__textBtn{
   padding: 9px 15px 8px 15px;
   background: #756157;
   border-radius: 4px;
   width: 160px;
   box-sizing: border-box;
   text-align: center;
+  
 }
