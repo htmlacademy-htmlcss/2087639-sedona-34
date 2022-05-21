@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./normalize.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./catalog.css" />
+</head>
+
+<body class="page">
+  <header class="page-header">
+    <img src="./images/logo.svg" class="page-header__logo" alt="Логотип сайта" />
+    <nav class="page-header__navigation">
+      <ul class="page-header__links">
+        <li class="page-header__link"><a href="#">Главная</a></li>
+        <li class="page-header__link"><a href="#">О Седоне</a></li>
+        <li class="page-header__link">
+          <a href="./catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="page-header__icons">
+      <li>
+        <img src="./images/search.png" alt="Кнопка поиска" />
+        <!-- <span class="visually-hidden">кнопка поиска</span> -->
+      </li>
+      <li>
+        <!-- <span class="visually-hidden">кнопка нравится</span> -->
+        <img src="./images/heart.png" alt="кнопка лайка" />
+        <div class="likesCounter"></div>
+      </li>
+    </ul>
+    <button class="page-header__button">Хочу сюда!</button>
+  </header>
+  <main class="catalog">
+    <section class="filter">
+      <div class="filter__content">
+        <div class="filter__title">
+          <h1 class="filter__header">Гостиницы Седоны</h1>
+          <ul class="breadcrubs">
+            <li>Домик</li>
+            <li>Стрелочка</li>
+            <li>Гостиницы</li>
+          </ul>
+        </div>
+        <div class="filter__form">
+          <ul class="left">
+            <li class="Infrastructure">
+              <p>Инфраструктура</p>
+              <fieldset>
+                <input type="checkbox" name="list" id="swimming-pool" checked>
+                <label for="swimming-pool">Бассейн</label>
+                <input type="checkbox" name="list" id="parking" checked>
+                <label for="parking">Парковка</label>
+                <input type="checkbox" name="list" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+              </fieldset>
+            </li>
+            <li class="Type-of-housing">
+              <p>Тип жилья:</p>
+              <fieldset>
+                <input type="radio" name="list" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+                <input type="radio" name="list" id="motel">
+                <label for="motel">Мотель</label>
+                <input type="radio" name="list" id="apartments">
+                <label for="apartments">Апартаменты</label>
+              </fieldset>
+            </li>
+          </ul>
+          <ul class="right">
+            <li>
+              <p>Стоимость, ₽:</p>
+              <fieldset>
+                <input type="text" value="от">
+                <input type="text" value="до">
+                <input type="range" id="price-count" name="price-count" min="0" max="9000" step="1">
+              </fieldset>
+            </li>
+            <li class="buttons">
+              <button>Применить</button>
+              <input type="reset" value="Сбросить">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="page-catalog">
+      <h2 class="visually-hidden">Каталог</h2>
+      <div class="catalog__sort">
+        <p>Найдено гостиниц: 38</p>
+        <form>
+          <select name="price-sort">
+            <option value="Cheap-ones-first">Сначала дешёвые</option>
+          </select>
+        </form>
+        <ul class="catalog__view">
+          <li>
+            <p class="visually-hidden">таблица</p>
+          </li>
+          <li>
+            <p class="visually-hidden">как то ещё</p>
+          </li>
+          <li>
+            <p class="visually-hidden">список</p>
+          </li>
+        </ul>
+      </div>
+      <ul class="catalog">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
