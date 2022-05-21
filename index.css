@@ -20,7 +20,7 @@
   background: #f2f2f2;
   margin: 0 auto;
 }
-.page-header{
+.page-header {
   display: flex;
   flex-direction: row;
   max-width: 1200px;
@@ -29,12 +29,12 @@
   margin: 0 auto;
   align-items: center;
 }
-.header__logo{
+.page-header__logo {
   height: 70px;
   margin-left: 70px;
-  margin-right: 47px;;
+  margin-right: 47px;
 }
-.header__links {
+.page-header__links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 34px;
@@ -46,34 +46,34 @@
   margin-inline-end: 0px;
   padding-inline-start: 0;
 }
-  .header__link a{
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: capitalize;
-    color: #000000;
-  }
-.header__icons{
+.page-header__link a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.page-header__icons {
   list-style: none;
   display: flex;
   flex-direction: row;
   margin-left: 311.11px;
 }
-.header__icons li{
+.page-header__icons li {
   margin-right: 23.49px;
 }
-.header__icons li:last-child{
+.page-header__icons li:last-child {
   margin-right: 0;
 }
-.header__button{
+.page-header__button {
   border: none;
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   margin-left: 17.87px;
   padding: 9px 15px 8px 15px;
