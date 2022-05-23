@@ -15,9 +15,9 @@
     <img src="./images/logo.svg" class="page-header__logo" alt="Логотип сайта" />
     <nav class="page-header__navigation">
       <ul class="page-header__links">
-        <li class="page-header__link"><a href="#">Главная</a></li>
+        <li class="page-header__link"><a href="./index.html">Главная</a></li>
         <li class="page-header__link"><a href="#">О Седоне</a></li>
-        <li class="page-header__link">
+        <li class="page-header__link current-link">
           <a href="./catalog.html">Гостиницы</a>
         </li>
       </ul>
@@ -38,15 +38,16 @@
   <main class="catalog">
     <section class="filter">
       <div class="filter__content">
-        <div class="filter__title">
+        <header class="filter__title">
           <h1 class="filter__header">Гостиницы Седоны</h1>
           <ul class="breadcrubs">
-            <li>Домик</li>
+            <li><a href="./index.html">Домик</a></li>
             <li>Стрелочка</li>
             <li>Гостиницы</li>
           </ul>
-        </div>
+        </header>
         <div class="filter__form">
+          <h2 class="visually-hidden">Фильтр выбора гостинницы</h2>
           <ul class="left">
             <li class="Infrastructure">
               <p>Инфраструктура</p>
@@ -200,9 +201,11 @@
     <section class="subscribe">
       <h5>Подпишитесь на рассылку</h5>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form>
-        <input type="email" value="Ваш e-mail">
-        <input type="submit" value="Подписаться">
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+        <button class="button newsletter-button" type="submit">
+          <span>Подписаться</span>
+        </button>
       </form>
     </section>
     <footer>
