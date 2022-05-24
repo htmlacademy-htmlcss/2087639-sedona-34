@@ -11,29 +11,25 @@
 </head>
 
 <body class="page">
-  <header class="page-header">
-    <img src="./images/logo.svg" class="page-header__logo" alt="Логотип сайта" />
-    <nav class="page-header__navigation">
-      <ul class="page-header__links">
-        <li class="page-header__link"><a href="./index.html">Главная</a></li>
-        <li class="page-header__link"><a href="#">О Седоне</a></li>
-        <li class="page-header__link current-link">
-          <a href="./catalog.html">Гостиницы</a>
-        </li>
+  <header class="header">
+    <img src="./images/logo.svg" class="header__logo" alt="Логотип сайта">
+    <nav class="header__navigation">
+      <ul class="header__links">
+        <li class="header__link current-link"><a href="./index.html">Главная</a></li>
+        <li class="header__link"><a href="#">О Седоне</a></li>
+        <li class="header__link"><a href="./catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
-    <ul class="page-header__icons">
-      <li>
-        <img src="./images/search.png" alt="Кнопка поиска" />
-        <!-- <span class="visually-hidden">кнопка поиска</span> -->
-      </li>
-      <li>
+    <ul class="header__icons">
+      <li><img src="./images/search.png" alt="Кнопка поиска">
+      <!-- <span class="visually-hidden">кнопка поиска</span> --></li>
+      <li class="header__like-button">
         <!-- <span class="visually-hidden">кнопка нравится</span> -->
-        <img src="./images/heart.png" alt="кнопка лайка" />
-        <div class="likesCounter"></div>
+        <img src="./images/heart.png" alt="кнопка лайка">
+        <div class="likes-counter">12</div>
       </li>
     </ul>
-    <button class="page-header__button">Хочу сюда!</button>
+    <button class="button">Хочу сюда!</button>
   </header>
   <main class="catalog">
     <section class="filter">
