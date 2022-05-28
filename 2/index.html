@@ -21,11 +21,12 @@
       </ul>
     </nav>
     <ul class="header__icons">
-      <li><img src="./images/search.png" alt="Кнопка поиска">
-      <!-- <span class="visually-hidden">кнопка поиска</span> --></li>
-      <li class="header__like-button">
-        <!-- <span class="visually-hidden">кнопка нравится</span> -->
-        <img src="./images/heart.png" alt="кнопка лайка">
+      <li><a href="#"><img src="./images/search.png" alt="Кнопка поиска">
+        <span class="visually-hidden">Кнопка поиска</span>
+      </a></li>
+      <li class="header__like-button"><a href="#">
+        <span class="visually-hidden">Кнопка нравится</span>
+        <img src="./images/heart.png" alt="кнопка лайка"></a>
         <div class="likes-counter">12</div>
       </li>
     </ul>
@@ -33,72 +34,66 @@
   </header>
   <main class="main">
     <section class="hero">
-      <img src="./images/welcome.png" alt="Приветствие Велком" class="hero__welcom-img">
-      <img src="./images/to-the-gorgeous.png" alt="К великолепному!" class="hero__caption">
-      <img src="./images/sedona-logo.png" alt="Седона" class="hero__logo">
-      <h1 class="visually-hidden">SEDONA</h1>
-      <div class="hero__introduction">
+      <div class="hero__image-wrapper">
+        <img src="./images/welcome.png" alt="Приветствие Велком" class="hero__welcome-img">
+        <img src="./images/to-the-gorgeous.png" alt="К великолепному!" class="hero__caption">
+        <img src="./images/sedona-logo.png" alt="Седона" class="hero__logo">
+        <h1 class="visually-hidden">SEDONA</h1>
         <img src="./images/divider.png" alt="и белая штуковина" class="divider">
-        <h1>Седона — небольшой городок в Аризоне,
+      </div>
+      <div class="hero__introduction">
+        <h1 class="hero__header">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="hero__paragraph">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем Гранд-Каньон!</p>
       </div>
     </section>
+
     <section class="benefits">
       <h2 class="visually-hidden">ПРЕИМУЩЕСТВА</h2>
       <ul class="benefits__grid">
-        <li>
-          <h2>Настоящий городок</h2>
+        <li class="benefit-cell benefit-cell_dark-theme">
+          <h2 class="benefit-cell__header">Настоящий городок</h2>
           <p>— №1 —</p>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
-        <li>
-          <img src="#" alt="Картинка цветастая">
+        <li class="benefit-image">
+          <img src="./images/photo-1.png" alt="Картинка цветастая">
         </li>
-        <li></li>
-        <li>
-          <img src="#" alt="logo" class="benefits__logo">
-          <h3>Жильё</h3>
-          <p>Рекомендуем пожить в настоящем мотеле,
-            всё как в кино!</p>
+        <li class="benefit-cell benefit-cell_light-theme">
+          <img src="./images/home.svg" alt="logo" class="benefits__logo">
+          <h3 class="benefit-cell__header">Жильё</h3>
+          <p class="">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li>
-          <img src="#" alt="logo" class="benefits__logo">
-          <h3>Еда</h3>
-          <p>Всегда заказывайте
-            топовый фирменный бургер, вы не разочаруетесь!</p>
+        <li class="benefit-cell">
+          <img src="./images/food.png" alt="logo" class="benefits__logo">
+          <h3 class="benefit-cell__header">Еда</h3>
+          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li>
-          <img src="#" alt="logo" class="benefits__logo">
-          <h3>Сувениры</h3>
-          <p>Не только китайского,
-            но и настоящего местного производства!</p>
+        <li class="benefit-cell benefit-cell_light-theme">
+          <img src="./images/gift.png" alt="logo" class="benefits__logo benefits__logo_gift">
+          <h3 class="benefit-cell__header">Сувениры</h3>
+          <p>Не только китайского, но и настоящего местного производства!</p>
         </li>
-        <li>
-          <img src="#" alt="Картинка цветастая">
+        <li class="benefit-img">
+          <img src="./images/photo-2.png" alt="Картинка цветастая">
         </li>
-        <li>
-
-        </li>
-        <li>
-          <h2>Там есть мост дьявола</h2>
+        <li class="benefit-cell benefit-cell_dark-theme">
+          <h2 class="benefit-cell__header">Там есть мост дьявола</h2>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
-        <li>
-          <h2>Небольшая площадь</h2>
+        <li class="benefit-cell benefit-cell_light-theme">
+          <h2 class="benefit-cell__header">Небольшая площадь</h2>
           <p>— №3 —</p>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li>
-          <h2>Красивая
-            дорога</h2>
+        <li class="benefit-cell benefit-cell_middle-theme">
+          <h2 class="benefit-cell__header">Красивая дорога</h2>
           <p>— №4 —</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li>
-          <h2>Мало
-            туристов</h2>
+        <li class="benefit-cell benefit-cell_light-theme">
+          <h2 class="benefit-cell__header">Мало туристов</h2>
           <p>— №5 —</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
