@@ -7,7 +7,6 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./normalize.css" />
   <link rel="stylesheet" href="./index.css" />
-  <link rel="stylesheet" href="./catalog.css" />
 </head>
 
 <body class="page">
@@ -21,11 +20,11 @@
       </ul>
     </nav>
     <ul class="header__icons">
-      <li><img src="./images/search.png" alt="Кнопка поиска">
-      <span class="visually-hidden">кнопка поиска</span></li>
-      <li class="header__like-button">
-        <span class="visually-hidden">кнопка нравится</span>
-        <img src="./images/heart.png" alt="кнопка лайка">
+      <li><a href="#"><img src="./images/search.png" alt="Кнопка поиска">
+          <span class="visually-hidden">кнопка поиска</span></a></li>
+      <li class="header__like-button"><a href="#">
+          <span class="visually-hidden">кнопка нравится</span>
+          <img src="./images/heart.png" alt="кнопка лайка"></a>
         <div class="likes-counter">12</div>
       </li>
     </ul>
@@ -33,65 +32,108 @@
   </header>
   <main class="catalog">
     <section class="filter">
-      <div class="filter__content">
-        <header class="filter__title">
-          <h1 class="filter__header">Гостиницы Седоны</h1>
-          <ul class="breadcrubs">
-            <li><a href="./index.html">Домик</a></li>
-            <li>Стрелочка</li>
-            <li>Гостиницы</li>
-          </ul>
-        </header>
-        <div class="filter__form">
-          <h2 class="visually-hidden">Фильтр выбора гостинницы</h2>
-          <ul class="left">
-            <li class="Infrastructure">
-              <p>Инфраструктура</p>
-              <fieldset>
-                <input type="checkbox" name="list" id="swimming-pool" checked>
-                <label for="swimming-pool">Бассейн</label>
-                <input type="checkbox" name="list" id="parking" checked>
-                <label for="parking">Парковка</label>
-                <input type="checkbox" name="list" id="wi-fi">
-                <label for="wi-fi">Wi-Fi</label>
-              </fieldset>
+
+      <header class="filter__header">
+        <h1 class="filter__title">Гостиницы Седоны</h1>
+        <ul class="breadcrubs">
+          <li><a href="./index.html">Домик</a></li>
+          <li>Стрелочка</li>
+          <li>Гостиницы</li>
+        </ul>
+      </header>
+
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="catalog-filter__group">
+          <legend class="catalog-filter__title">
+            Инфраструктура:
+          </legend>
+          <ul class="catalog-filter__list">
+            <li class="catalog-filter__item">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="swimming-pool" checked>
+                Бассейн
+              </label>
             </li>
-            <li class="Type-of-housing">
-              <p>Тип жилья:</p>
-              <fieldset>
-                <input type="radio" name="list" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
-                <input type="radio" name="list" id="motel">
-                <label for="motel">Мотель</label>
-                <input type="radio" name="list" id="apartments">
-                <label for="apartments">Апартаменты</label>
-              </fieldset>
+            <li class="catalog-filter__item">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="parking" checked>
+                Парковка
+              </label>
+            </li>
+            <li class="catalog-filter__item">
+              <label class="control">
+                <input class="control__input" type="checkbox" name="wi-fi">
+                Wi-Fi
+              </label>
             </li>
           </ul>
-          <ul class="right">
+        </fieldset>
+
+        <fieldset class="catalog-filter__group">
+          <legend class="catalog-filter__title">
+            Тип жилья:
+          </legend>
+          <ul class="catalog-filter__list">
+            <li class="catalog-filter__item">
+              <label class="control">
+                <input class="control__input" type="radio" name="type-of-place" value="hotel" checked>
+                Гостиница
+              </label>
+            </li>
+            <li class="catalog-filter__item">
+              <label class="control">
+                <input class="control__input" type="radio" name="type-of-place" value="motel">
+                Мотель
+              </label>
+            </li>
+            <li class="catalog-filter__item">
+              <label class="control">
+                <input class="control__input" type="radio" name="type-of-place" value="apartments">
+                Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter__group">
+          <legend class="catalog-filter__title">
+            Стоимость, ₽:
+          </legend>
+          <ul>
             <li>
-              <p>Стоимость, ₽:</p>
-              <fieldset>
-                <input type="text" value="от">
-                <input type="text" value="до">
-                <input type="range" id="price-count" name="price-count" min="0" max="9000" step="1">
-              </fieldset>
+              <label class="control">
+                <input type="text" class="control__input" name="min-cost" value="от">
+              </label>
+              <label class="control">
+                <input type="text" class="control__input" name="max-cost" value="до">
+              </label>
             </li>
-            <li class="buttons">
-              <button>Применить</button>
-              <input type="reset" value="Сбросить">
+            <li>
+              <label class="control">
+                <input type="range" name="price-counter" min="0" max="9000" step="1">
+              </label>
             </li>
           </ul>
-        </div>
-      </div>
+        </fieldset>
+        <ul class="catalog-filter__buttons">
+          <li class="catalog-filter__submit">
+            <button class="button" type="submit">Применить</button>
+          </li>
+          <li class="catalog-filter__reset"></li>
+          <input type="reset" value="Сбросить" class="button__reset">
+          </li>
+        </ul>
+      </form>
+
     </section>
     <section class="page-catalog">
       <h2 class="visually-hidden">Каталог</h2>
       <div class="catalog__sort">
         <p>Найдено гостиниц: 38</p>
         <form>
-          <select name="price-sort">
-            <option value="Cheap-ones-first">Сначала дешёвые</option>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала дешёвые</option>
+            <option value="cheap">Сначала популярные</option>
+            <option value="expensive">Сначала дорогие</option>
           </select>
         </form>
         <ul class="catalog__view">
