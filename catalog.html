@@ -136,19 +136,24 @@
             <option value="expensive">Сначала дорогие</option>
           </select>
         </form>
-        <ul class="catalog__view">
+        <ul class="page-catalog__view">
           <li>
+            <img src="#" class="page-catalog__table" alt="показать таблицей">
             <p class="visually-hidden">таблица</p>
           </li>
           <li>
-            <p class="visually-hidden">как то ещё</p>
+            <img src="#" class="page-catalog__slideshow" alt="показать слайдшоу">
+            <p class="visually-hidden">Слайдшоу</p>
           </li>
           <li>
+            <img src="#" class="page-catalog__list" alt="показать списком">
             <p class="visually-hidden">список</p>
           </li>
         </ul>
       </div>
-      <ul class="catalog">
+      <ul class="output-of-results">
+        <!-- бывший класс каталог, заменён, так как класс был использован ранее
+      Как мне кажется, тут происходит выдача результатов поиска, поэтому так переименовал класс output-of-results -->
         <li>
           <img src="#" alt="hotel amara resort">
           <h4>Amara Resort & Spa</h4>
@@ -156,10 +161,8 @@
             <li>Гостиница</li>
             <li>От 4000 ₽</li>
           </ul>
-          <ul>
-            <li>подробнее</li>
-            <li>в избранное</li>
-          </ul>
+          <a href="#">подробнее</a>
+          <a href="#">в избранное</a>
           <ul>
             <li>stars</li>
             <li>Рейтинг: 8,5</li>
@@ -173,8 +176,8 @@
             <li>От 5000 ₽</li>
           </ul>
           <ul>
-            <li>подробнее</li>
-            <li>в избранное</li>
+            <a href="#">подробнее</a>
+            <a href="#">в избранное</a>
           </ul>
           <ul>
             <li>stars</li>
@@ -189,8 +192,8 @@
             <li>От 2500 ₽</li>
           </ul>
           <ul>
-            <li>подробнее</li>
-            <li>в избранное</li>
+            <a href="#">подробнее</a>
+            <a href="#">в избранное</a>
           </ul>
           <ul>
             <li>stars</li>
@@ -205,8 +208,8 @@
             <li>От 1500 ₽</li>
           </ul>
           <ul>
-            <li>подробнее</li>
-            <li>в избранное</li>
+            <a href="#">подробнее</a>
+            <a href="#">в избранное</a>
           </ul>
           <ul>
             <li>stars</li>
@@ -217,12 +220,12 @@
       <div class="diviver">разделительная линия</div>
       <div class="pagination">
         <ul class="pagination__pages">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
           <li>...</li>
-          <li>10</li>
+          <li><a href="#">10</a></li>
         </ul>
         <ul class="pagination__items-on-page">
           <li>Гостиниц на странице:</li>
