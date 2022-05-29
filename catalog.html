@@ -11,7 +11,8 @@
 
 <body class="page">
   <header class="header">
-    <img src="./images/logo.svg" class="header__logo" alt="Логотип сайта">
+    <a href="./index.html" class="header__index"><img src="./images/logo.svg" class="header__logo"
+        alt="Логотип сайта"></a>
     <nav class="header__navigation">
       <ul class="header__links">
         <li class="header__link current-link"><a href="./index.html">Главная</a></li>
@@ -151,72 +152,76 @@
           </li>
         </ul>
       </div>
+
+      <!-- Обсудить правильность разметки и наименования по БЭМ этого раздела -->
       <ul class="output-of-results">
-        <!-- бывший класс каталог, заменён, так как класс был использован ранее
-      Как мне кажется, тут происходит выдача результатов поиска, поэтому так переименовал класс output-of-results -->
-        <li>
-          <img src="#" alt="hotel amara resort">
-          <h4>Amara Resort & Spa</h4>
-          <ul>
-            <li>Гостиница</li>
-            <li>От 4000 ₽</li>
-          </ul>
-          <a href="#">подробнее</a>
-          <a href="#">в избранное</a>
-          <ul>
-            <li>stars</li>
-            <li>Рейтинг: 8,5</li>
-          </ul>
-        </li>
-        <li>
-          <img src="#" alt="Villas at Poco Diablo">
-          <h4>Villas at Poco Diablo</h4>
-          <ul>
-            <li>Гостиница</li>
-            <li>От 5000 ₽</li>
-          </ul>
-          <ul>
+        <li class="list">
+          <img src="./images/amara-resort-spa.png">
+          <h3>Amara Resort & Spa</h3>
+          <div class="list__text">
+            <p>Гостиница</p>
+            <p>От 4000 ₽</p>
+          </div>
+          <div class="list__button">
             <a href="#">подробнее</a>
             <a href="#">в избранное</a>
-          </ul>
-          <ul>
-            <li>stars</li>
-            <li>Рейтинг: 9,2</li>
-          </ul>
+          </div>
+          <div class="list__rating">
+            <p>stars</p>
+            <p>Рейтинг: 8,5</p>
+          </div>
         </li>
-        <li>
-          <img src="#" alt="Desert Quail Inn">
-          <h4>Desert Quail Inn</h4>
-          <ul>
-            <li>Гостиница</li>
-            <li>От 2500 ₽</li>
-          </ul>
-          <ul>
+
+        <li class="list">
+          <img src="./images/villas-at-poco-diablo.png">
+          <h3>Villas at Poco Diablo</h3>
+          <div class="list__text">
+            <p>Гостиница</p>
+            <p>От 5000 ₽</p>
+          </div>
+          <div class="list__button">
+            <a href="#">подробнее</a>
+            <a href="#">в избранном</a>
+          </div>
+          <div class="list__rating">
+            <p>stars</p>
+            <p>Рейтинг: 9,2</p>
+          </div>
+        </li>
+        <li class="list">
+          <img src="./images/Desert-Quail-Inn.png">
+          <h3>Desert Quail Inn</h3>
+          <div class="list__text">
+            <p>Гостиница</p>
+            <p>От 2500 ₽</p>
+          </div>
+          <div class="list__button">
             <a href="#">подробнее</a>
             <a href="#">в избранное</a>
-          </ul>
-          <ul>
-            <li>stars</li>
-            <li>Рейтинг: 6,9</li>
-          </ul>
+          </div>
+          <div class="list__rating">
+            <p>stars</p>
+            <p>Рейтинг: 6,9</p>
+          </div>
         </li>
-        <li>
-          <img src="#" alt="GreenTree Inn">
-          <h4>GreenTree Inn</h4>
-          <ul>
-            <li>Гостиница</li>
-            <li>От 1500 ₽</li>
-          </ul>
-          <ul>
+        <li class="list">
+          <img src="./images/GreenTree-Inn.png">
+          <h3>GreenTree Inn</h3>
+          <div class="list__text">
+            <p>Гостиница</p>
+            <p>От 1500 ₽</p>
+          </div>
+          <div class="list__button">
             <a href="#">подробнее</a>
             <a href="#">в избранное</a>
-          </ul>
-          <ul>
-            <li>stars</li>
-            <li>Рейтинг: 5,0</li>
-          </ul>
+          </div>
+          <div class="list__rating">
+            <p>stars</p>
+            <p>Рейтинг: 5,0</p>
+          </div>
         </li>
       </ul>
+        
       <div class="diviver">разделительная линия</div>
       <div class="pagination">
         <ul class="pagination__pages">
@@ -239,7 +244,7 @@
         </ul>
       </div>
     </section>
-    <section class="subscribe">
+    <section class="subscribe-catalog">
       <h5>Подпишитесь на рассылку</h5>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -252,17 +257,13 @@
     <footer>
       <div class="footer__line">
         <h4 class="visually-hidden">Контакты</h4>
-        <ul>
-          <li>
-            <ul class="footer__icons">
-              <li><a href="https://vk.com/htmlacademy"><img src="#" alt="vkontakte"></a></li>
-              <li><a href="https://t.me/htmlacademy"><img src="#" alt="telegram"></a></li>
-              <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="youtube"></a></li>
-            </ul>
-          </li>
-          <li><a href="tel:88128121212">+7 (812) 812-12-12</a></li>
-          <li><a href="https://htmlacademy.ru/"><img src="#" alt="Логотип академии"></a></li>
+        <ul class="social-icons">
+          <li><a href="https://vk.com/htmlacademy"><img src="./images/social-vk.svg" alt="vkontakte"></a></li>
+          <li><a href="https://t.me/htmlacademy"><img src="./images/social-telegram.svg" alt="telegram"></a></li>
+          <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="./images/social-youtube.svg" alt="youtube"></a></li>
         </ul>
+        <address><a href="tel:88128121212">+7 (812) 812-12-12</a></address>
+        <a href="https://htmlacademy.ru/"><img src="./images/HTML-Academy.svg" alt="Логотип академии"></a>
       </div>
     </footer>
   </main>

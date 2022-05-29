@@ -11,7 +11,7 @@
 
 <body class="page">
   <header class="header">
-    <img src="./images/logo.svg" class="header__logo" alt="Логотип сайта">
+    <a  href="./index.html" class="header__index"><img src="./images/logo.svg" class="header__logo" alt="Логотип сайта"></a>
     <nav class="header__navigation">
       <ul class="header__links">
         <li class="header__link current-link"><a href="#">Главная</a></li>
@@ -34,11 +34,10 @@
   <main class="main">
     <section class="hero">
       <div class="hero__image-wrapper">
-        <img src="./images/welcome.png" alt="Приветствие Велком" class="hero__welcome-img">
-        <img src="./images/to-the-gorgeous.png" alt="К великолепному!" class="hero__caption">
-        <img src="./images/sedona-logo.png" alt="Седона" class="hero__logo">
+        <img src="./images/hero-pic.png">
         <h1 class="visually-hidden">SEDONA</h1>
-        <img src="./images/divider.png" alt="и белая штуковина" class="divider">
+        <span class="visually-hidden">К великолепному</span>
+        <span class="visually-hidden">Потому что большой каньон - отстой!</span>
       </div>
       <div class="hero__introduction">
         <h1 class="hero__header">Седона — небольшой городок в Аризоне,
@@ -117,17 +116,13 @@
     <footer>
       <div class="footer__line">
         <h4 class="visually-hidden">Контакты</h4>
-        <ul>
-          <li>
-            <ul class="footer__icons">
-              <li><a href="https://vk.com/htmlacademy"><img src="#" alt="vkontakte"></a></li>
-              <li><a href="https://t.me/htmlacademy"><img src="#" alt="telegram"></a></li>
-              <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="youtube"></a></li>
-            </ul>
-          </li>
-          <li><a href="tel:88128121212">+7 (812) 812-12-12</a></li>
-          <li><a href="https://htmlacademy.ru/"><img src="#" alt="Логотип академии"></a></li>
+        <ul class="social-icons">
+          <li><a href="https://vk.com/htmlacademy"><img src="./images/social-vk.svg" alt="vkontakte"></a></li>
+          <li><a href="https://t.me/htmlacademy"><img src="./images/social-telegram.svg" alt="telegram"></a></li>
+          <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="./images/social-youtube.svg" alt="youtube"></a></li>
         </ul>
+        <address><a href="tel:88128121212">+7 (812) 812-12-12</a></address>
+        <a href="https://htmlacademy.ru/"><img src="./images/HTML-Academy.svg" alt="Логотип академии"></a>
       </div>
     </footer>
   </main>
