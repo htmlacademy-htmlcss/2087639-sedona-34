@@ -12,7 +12,8 @@
 
 <body class="page">
   <header class="header">
-    <a  href="./index.html" class="header__index"><img src="./images/logo.svg" class="header__logo" alt="Логотип сайта"></a>
+    <a href="./index.html" class="header__index"><img src="./images/logo.svg" class="header__logo"
+        alt="Логотип сайта"></a>
     <nav class="header__navigation">
       <ul class="header__links">
         <li class="header__link current-link"><a href="#">Главная</a></li>
@@ -22,11 +23,11 @@
     </nav>
     <ul class="header__icons">
       <li><a href="#"><img src="./images/search.png" alt="Кнопка поиска">
-        <span class="visually-hidden">Кнопка поиска</span>
-      </a></li>
+          <span class="visually-hidden">Кнопка поиска</span>
+        </a></li>
       <li class="header__like-button"><a href="#">
-        <span class="visually-hidden">Кнопка нравится</span>
-        <img src="./images/heart.png" alt="кнопка лайка"></a>
+          <span class="visually-hidden">Кнопка нравится</span>
+          <img src="./images/heart.png" alt="кнопка лайка"></a>
         <div class="likes-counter">12</div>
       </li>
     </ul>
@@ -35,7 +36,7 @@
   <main class="main">
     <section class="hero">
       <div class="hero__image-wrapper">
-        <img src="./images/hero-pic.png">
+        <img src="./images/hero-pic.png" alt="Добро пожаловать в Седону! Потому что Гранд Каньон отстой">
         <h1 class="visually-hidden">SEDONA</h1>
         <span class="visually-hidden">К великолепному</span>
         <span class="visually-hidden">Потому что большой каньон - отстой!</span>
@@ -49,55 +50,57 @@
 
     <section class="benefits">
       <h2 class="visually-hidden">ПРЕИМУЩЕСТВА</h2>
-      <ul class="benefits__grid">
-        <li class="benefit-cell benefit-cell_dark-theme">
-          <h2 class="benefit-cell__header">Настоящий городок</h2>
-          <p>— №1 —</p>
-          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+      <ul class="benefit__list">
+        <li class="benefit__item benefit__item_dark">
+          <h3 class="benefit__title">Настоящий городок</h3>
+          <p class="benefit__number">— №1 —</p>
+          <p class="benefit__paragraph">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
-        <li class="benefit-image">
-          <img src="./images/photo-1.png" alt="Картинка цветастая">
+        <li class="benefit__image"></li>
+        <li class="benefit__item benefit__item_light">
+          <img src="./images/home.svg" class="benefit__pic" alt="схематичное изображение домика">
+          <h3 class="benefit__title">Жильё</h3>
+          <p class="benefit__paragraph">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li class="benefit-cell benefit-cell_light-theme">
-          <img src="./images/home.svg" alt="logo" class="benefits__logo">
-          <h3 class="benefit-cell__header">Жильё</h3>
-          <p class="">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        <li class="benefit__item">
+          <img src="./images/food.svg" class="benefit__pic" alt="схематичное изображение еды">
+          <h3 class="benefit__title">Еда</h3>
+          <p class="benefit__paragraph">Всегда заказывайте
+            топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="benefit-cell">
-          <img src="./images/food.png" alt="logo" class="benefits__logo">
-          <h3 class="benefit-cell__header">Еда</h3>
-          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+        <li class="benefit__item benefit__item_light">
+          <img src="./images/gift.svg" class="benefit__pic" alt="схематичное изображение подарка">
+          <h3 class="benefit__title">Сувениры</h3>
+          <p class="benefit__paragraph">Не только китайского,
+            но и настоящего местного производства!</p>
         </li>
-        <li class="benefit-cell benefit-cell_light-theme">
-          <img src="./images/gift.png" alt="logo" class="benefits__logo benefits__logo_gift">
-          <h3 class="benefit-cell__header">Сувениры</h3>
-          <p>Не только китайского, но и настоящего местного производства!</p>
+      </ul>
+      <ul class="benefit__list">
+        <li class="benefit__second-pic"></li>
+        <li class="benefit__item benefit__item_dark">
+          <h3 class="benefit__title">Там есть
+            мост дьявола</h3>
+          <p class="benefit__number">— №2 —</p>
+          <p class="benefit__paragraph">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
-        <li class="benefit-img">
-          <img src="./images/photo-2.png" alt="Картинка цветастая">
+        <li class="benefit__item benefit__item_light-bottom">
+          <h3 class="benefit__title">Небольшая площадь</h3>
+          <p class="benefit__number">— №3 —</p>
+          <p class="benefit__paragraph">Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="benefit-cell benefit-cell_dark-theme">
-          <h2 class="benefit-cell__header">Там есть мост дьявола</h2>
-          <p>— №2 —</p>
-          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        <li class="benefit__item benefit__item_middle">
+          <h3 class="benefit__title">Красивая<br>дорога</h3>
+          <p class="benefit__number">— №4 —</p>
+          <p class="benefit__paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="benefit-cell benefit-cell_light-theme">
-          <h2 class="benefit-cell__header">Небольшая площадь</h2>
-          <p>— №3 —</p>
-          <p>Все достопримечательности находятся очень близко</p>
-        </li>
-        <li class="benefit-cell benefit-cell_middle-theme">
-          <h2 class="benefit-cell__header">Красивая дорога</h2>
-          <p>— №4 —</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="benefit-cell benefit-cell_light-theme">
-          <h2 class="benefit-cell__header">Мало туристов</h2>
-          <p>— №5 —</p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        <li class="benefit__item benefit__item_light-bottom">
+          <h3 class="benefit__title">Мало<br> туристов</h3>
+          <p class="benefit__number">— №5 —</p>
+          <p class="benefit__paragraph">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
     </section>
+
     <section class="find-hotel">
       <h4>Заинтересовались?</h4>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
@@ -120,7 +123,8 @@
         <ul class="social-icons">
           <li><a href="https://vk.com/htmlacademy"><img src="./images/social-vk.svg" alt="vkontakte"></a></li>
           <li><a href="https://t.me/htmlacademy"><img src="./images/social-telegram.svg" alt="telegram"></a></li>
-          <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="./images/social-youtube.svg" alt="youtube"></a></li>
+          <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="./images/social-youtube.svg"
+                alt="youtube"></a></li>
         </ul>
         <address><a href="tel:88128121212">+7 (812) 812-12-12</a></address>
         <a href="https://htmlacademy.ru/"><img src="./images/HTML-Academy.svg" alt="Логотип академии"></a>
