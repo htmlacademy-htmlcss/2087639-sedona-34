@@ -2,14 +2,16 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("PT Sans"), url(./fonts/ptsans-400.woff2) format("woff2");
+  src: local("PT Sans"), url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap; /* поточнее разобраться что такое */
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: local("PT Sans"), url(./fonts/ptsans-700.woff2) format("woff2");
+  src: local("PT Sans"), url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
 }
 
 * {
@@ -161,7 +163,7 @@
   align-items: center;
   background-repeat: no-repeat;
   position: relative;
-  background-image: url('./images/hero-pic.png');
+  background-image: url('../images/hero-pic.png');
   background-repeat: no-repeat;
 }
 
@@ -253,7 +255,7 @@
 }
 
 .benefit__image {
-  background: url("./images/photo-1.jpg");
+  background: url("../images/photo-1.jpg");
   grid-column-start: 2;
   grid-column-end: 4;
 }
@@ -265,7 +267,7 @@
   background: rgba(131, 179, 211, 0.12);
 }
 .benefit__second-pic{
-  background: url("./images/photo-2.jpg");
+  background: url("../images/photo-2.jpg");
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -279,7 +281,7 @@
 }
 
 .subscribe {
-  background-image: url(./images/subscribe.jpg);
+  background-image: url(../images/subscribe.jpg);
   height: 411px;
 }
 
@@ -295,7 +297,7 @@
   height: 411px;
 }
 .filter{
-  background: url("./images/fiter-background.jpg");
+  background: url("../images/fiter-background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
