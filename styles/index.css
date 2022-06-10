@@ -3,7 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("PT Sans"), url(../fonts/ptsans-400.woff2) format("woff2");
-  font-display: swap; /* поточнее разобраться что такое */
+  font-display: swap;
+  /* поточнее разобраться что такое */
 }
 
 @font-face {
@@ -38,6 +39,7 @@
   background: #f2f2f2;
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
+  color: #333333;
 }
 
 .header {
@@ -47,7 +49,6 @@
   height: 65px;
   background: #fff;
   margin: 0 auto;
-  align-items: center;
 }
 
 .header__index {
@@ -64,16 +65,25 @@
 }
 
 .header__links {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 34px;
+  display: flex;
+  flex-direction: row;
   max-width: 390px;
   list-style: none;
+  margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0;
+  padding-top: 18px;
+}
+
+.header__link {
+  margin-right: 34px;
+}
+
+.header__link:last-child {
+  margin: 0;
 }
 
 .header__link a {
@@ -90,6 +100,7 @@
   display: flex;
   flex-direction: row;
   margin-left: 311.11px;
+  padding-top: 20px;
 }
 
 .header__icons li {
@@ -98,6 +109,7 @@
 
 .header__icons li:last-child {
   margin-right: 0;
+  padding-right: 32.3px;
 }
 
 .header__like-button {
@@ -124,7 +136,9 @@
   align-items: center;
 }
 
-.button {
+.header__button {
+  width: 160px;
+  height: 37px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -133,13 +147,12 @@
   color: #ffffff;
   text-transform: uppercase;
   border: none;
-  margin-left: 32.3px;
-  padding: 9px 15px 8px 15px;
   background: #756157;
   border-radius: 4px;
   width: 160px;
   box-sizing: border-box;
   text-align: center;
+  margin-top: 11px;
 }
 
 .main {
@@ -160,11 +173,6 @@
   height: 485px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-repeat: no-repeat;
-  position: relative;
-  background-image: url('../images/hero-pic.png');
-  background-repeat: no-repeat;
 }
 
 .hero__introduction {
@@ -259,23 +267,28 @@
   grid-column-start: 2;
   grid-column-end: 4;
 }
-.benefit__pic{
+
+.benefit__pic {
   padding-top: 80px;
   padding-bottom: 30px;
 }
-.benefit__item_light{
+
+.benefit__item_light {
   background: rgba(131, 179, 211, 0.12);
 }
-.benefit__second-pic{
+
+.benefit__second-pic {
   background: url("../images/photo-2.jpg");
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.benefit__item_light-bottom{
+
+.benefit__item_light-bottom {
   background: rgba(131, 179, 211, 0.12);
   padding: 103px 85px 102px 85px;
 }
-.benefit__item_middle{
+
+.benefit__item_middle {
   background: rgba(131, 179, 211, 0.2);
   padding: 103px 85px 102px 85px;
 }
@@ -283,20 +296,195 @@
 .subscribe {
   background-image: url(../images/subscribe.jpg);
   height: 411px;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
+.subcribe__form {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+
+}
+
+.subscribe__title {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 29px;
+}
+
+.subcribe__text {
+  width: 475px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 46px;
+}
+
+.subcribe__field {
+  width: 600px;
+  height: 60px;
+  background: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  padding: 20px 0 19px 22px;
+  border: 0;
+}
+
+.subcribe__button {
+  width: 200px;
+  height: 60px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #82B3D3;
+  border: 0;
+  border-radius: 0px 10px 10px 0px;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.find-hotel {
+  max-width: 1200px;
+  height: 417px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 91px 0 93px 0;
+}
+
+.find-hotel__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 29px;
+}
+
+.find-hotel__text {
+  width: 592px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  padding-bottom: 56px;
+  margin: 0;
+}
+
+.find-hotel__button {
+  background: #756157;
+  border-radius: 4px;
+  width: 574px;
+  height: 60px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0;
+}
+
+.footer {
+  height: 120px;
+  left: 40px;
+}
+
+.footer__line {
+  width: 1200px;
+  border: 1px solid #E6E6E6;
+  transform: matrix(0.71, 0, -inf, -nan, 0, 0);
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 70px 30px 70px;
+  align-items: center;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: 249.17px;
+}
+
+.social-icons__item {
+  margin-right: 26.33px;
+}
+
+.social-icons__item:nth-child(2) {
+  margin-right: 27.33px;
+}
+
+.social-icons__item:last-child {
+  margin: 0;
+}
+
+.footer__tel {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 235.5px;
+}
+
+
+
+
 /* ==================================== catalog ====================================*/
-.catalog{
+.catalog {
   margin: 0 auto;
   padding: 0;
   width: 1200px;
 }
+
 .subscribe-catalog {
   background: #ffffff;
   width: 1200px;
   height: 411px;
 }
-.filter{
+
+.filter {
   background: url("../images/fiter-background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
