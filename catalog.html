@@ -3,14 +3,14 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./styles/normalize.css" />
-  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body class="page">
-  <header class="header">
+  <header class="header header__catalog">
     <a href="./index.html" class="header__index"><img src="./images/logo.svg" class="header__logo"
         alt="Логотип сайта"></a>
     <nav class="header__navigation">
@@ -35,7 +35,7 @@
         <div class="likes-counter">12</div>
       </li>
     </ul>
-    <button class="button">Хочу сюда!</button>
+    <button class="header__button">Хочу сюда!</button>
   </header>
   <main class="catalog">
     <section class="filter">
@@ -43,31 +43,32 @@
       <header class="filter__header">
         <h1 class="filter__title">Гостиницы Седоны</h1>
         <ul class="breadcrubs">
-          <li><a href="./index.html">Домик</a></li>
-          <li>Стрелочка</li>
-          <li>Гостиницы</li>
+          <li class="breadcrubs__item"><a href="./index.html"><img src="./images/home-breadcrubs.svg"
+                class="breadcrubs__pic"></a></li>
+          <li class="breadcrubs__item"><img src="./images/arrow.svg"></li>
+          <li class="breadcrubs__item">Гостиницы</li>
         </ul>
       </header>
 
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="catalog-filter__group">
-          <legend class="catalog-filter__title">
+      <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="filter__group">
+          <legend class="filter__legend">
             Инфраструктура:
           </legend>
-          <ul class="catalog-filter__list">
-            <li class="catalog-filter__item">
+          <ul class="filter__list">
+            <li class="filter__item">
               <label class="control">
                 <input class="control__input" type="checkbox" name="swimming-pool" checked>
                 Бассейн
               </label>
             </li>
-            <li class="catalog-filter__item">
+            <li class="filter__item">
               <label class="control">
                 <input class="control__input" type="checkbox" name="parking" checked>
                 Парковка
               </label>
             </li>
-            <li class="catalog-filter__item">
+            <li class="filter__item">
               <label class="control">
                 <input class="control__input" type="checkbox" name="wi-fi">
                 Wi-Fi
@@ -76,24 +77,24 @@
           </ul>
         </fieldset>
 
-        <fieldset class="catalog-filter__group">
-          <legend class="catalog-filter__title">
+        <fieldset class="filter__group">
+          <legend class="filter__legend">
             Тип жилья:
           </legend>
-          <ul class="catalog-filter__list">
-            <li class="catalog-filter__item">
+          <ul class="filter__list">
+            <li class="filter__item">
               <label class="control">
                 <input class="control__input" type="radio" name="type-of-place" value="hotel" checked>
                 Гостиница
               </label>
             </li>
-            <li class="catalog-filter__item">
+            <li class="filter__item">
               <label class="control">
                 <input class="control__input" type="radio" name="type-of-place" value="motel">
                 Мотель
               </label>
             </li>
-            <li class="catalog-filter__item">
+            <li class="filter__item">
               <label class="control">
                 <input class="control__input" type="radio" name="type-of-place" value="apartments">
                 Апартаменты
@@ -101,11 +102,11 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="catalog-filter__group">
-          <legend class="catalog-filter__title">
+        <fieldset class="filter__group">
+          <legend class="filter__legend">
             Стоимость, ₽:
           </legend>
-          <ul>
+          <ul class="filter__price">
             <li>
               <label class="control">
                 <input type="text" class="control__input" name="min-cost" value="от">
@@ -121,29 +122,29 @@
             </li>
           </ul>
         </fieldset>
-        <ul class="catalog-filter__buttons">
-          <li class="catalog-filter__submit">
+        <ul class="filter__buttons">
+          <li class="filter__submit">
             <button class="button" type="submit">Применить</button>
           </li>
-          <li class="catalog-filter__reset">
+          <li class="filter__reset">
             <input type="reset" value="Сбросить" class="button__reset">
           </li>
         </ul>
       </form>
 
     </section>
-    <section class="page-catalog">
+    <section class="availability">
       <h2 class="visually-hidden">Каталог</h2>
-      <div class="catalog__sort">
-        <p>Найдено гостиниц: 38</p>
-        <form>
-          <select class="select-control" aria-label="Сортировка">
+      <div class="availability__sort">
+        <p class="availability__text">Найдено гостиниц: 38</p>
+        <form class="availability__form">
+          <select class="availability__select" aria-label="Сортировка">
             <option value="popular">Сначала дешёвые</option>
             <option value="cheap">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
         </form>
-        <ul class="page-catalog__view">
+        <ul class="availability__view">
           <li>
             <a href="#">
               <img src="./images/view-table.svg" class="page-catalog__table" alt="показать таблицей">
@@ -166,8 +167,8 @@
       </div>
 
       <!-- Обсудить правильность разметки и наименования по БЭМ этого раздела -->
-      <ul class="results">
-        <li class="results__list">
+      <ul class="availability__results">
+        <li class="availability__list">
           <img src="./images/amara-resort-spa.jpg" alt="Amara resort spa">
           <h3>Amara Resort & Spa</h3>
           <div class="list__text">
