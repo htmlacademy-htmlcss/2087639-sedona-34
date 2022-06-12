@@ -168,6 +168,8 @@
   flex-direction: column;
   align-items: center;
   background: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .hero__image-wrapper {
@@ -175,12 +177,19 @@
   height: 485px;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .hero__introduction {
   margin: 0 auto;
+  padding: 0;
+  width: 1200px;
   padding-top: 63px;
   padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__header {
@@ -194,9 +203,16 @@
   text-transform: uppercase;
   color: #000000;
   padding-bottom: 31px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .hero__paragraph {
+  height: 26px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -204,6 +220,8 @@
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 .benefits {
@@ -307,7 +325,7 @@
   padding-bottom: 94px;
 }
 
-.subscribe__catalog{
+.subscribe__catalog {
   background-image: none;
   background: #fff;
 }
@@ -342,11 +360,11 @@
   padding-bottom: 46px;
 }
 
-.subscribe__title_theme{
+.subscribe__title_theme {
   color: #000000;
 }
 
-.subcribe__text_theme{
+.subcribe__text_theme {
   color: #000000;
 }
 
@@ -579,48 +597,58 @@
   margin: 0;
   padding: 0;
 }
-.filter__price{
+
+.filter__price {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.filter__buttons{
+
+.filter__buttons {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.availability{
+
+.availability {
   background: #fff;
 }
-.availability__sort{
+
+.availability__sort {
   display: flex;
   margin: 0;
   padding: 0;
 }
-.availability__view{
+
+.availability__view {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-.availability__results{
+
+.availability__results {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
-.diviver{
+
+.diviver {
   border: 1px solid #E6E6E6;
   width: 1055px;
   margin: 0 auto;
 }
-.pagination{
+
+.pagination {
   display: flex;
 }
-.pagination__list{
+
+.pagination__list {
   display: flex;
   list-style: none;
 }
-.pagination__count{
+
+.pagination__count {
   display: flex;
   list-style: none;
 }
