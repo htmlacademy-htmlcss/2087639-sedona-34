@@ -166,7 +166,6 @@
         </ul>
       </div>
 
-      <!-- Обсудить правильность разметки и наименования по БЭМ этого раздела -->
       <ul class="availability__results">
         <li class="availability__list">
           <img src="./images/amara-resort-spa.jpg" alt="Amara resort spa">
@@ -235,9 +234,9 @@
         </li>
       </ul>
 
-      <div class="diviver">разделительная линия</div>
+      <div class="diviver"></div>
       <div class="pagination">
-        <ul class="pagination__pages">
+        <ul class="pagination__list">
           <li><a href="#">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
@@ -245,7 +244,7 @@
           <li>...</li>
           <li><a href="#">10</a></li>
         </ul>
-        <ul class="pagination__items-on-page">
+        <ul class="pagination__count">
           <li>Гостиниц на странице:</li>
           <li>
             <form>
@@ -257,28 +256,30 @@
         </ul>
       </div>
     </section>
-    <section class="subscribe-catalog">
-      <h5>Подпишитесь на рассылку</h5>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
-        <button class="button newsletter-button" type="submit">
+    <section class="subscribe subscribe__catalog">
+      <h5 class="subscribe__title subscribe__title_theme">Подпишитесь на рассылку</h5>
+      <p class="subcribe__text subcribe__text_theme">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subcribe__form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="subcribe__field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+        <button class="subcribe__button" type="submit">
           <span>Подписаться</span>
         </button>
       </form>
     </section>
-    <footer>
+    <footer class="footer">
       <div class="footer__line">
+      <div class="footer__contacts">
         <h4 class="visually-hidden">Контакты</h4>
         <ul class="social-icons">
-          <li><a href="https://vk.com/htmlacademy"><img src="./images/social-vk.svg" alt="vkontakte"></a></li>
-          <li><a href="https://t.me/htmlacademy"><img src="./images/social-telegram.svg" alt="telegram"></a></li>
-          <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="./images/social-youtube.svg"
+          <li class="social-icons__item"><a href="https://vk.com/htmlacademy"><img src="./images/social-vk.svg" alt="vkontakte"></a></li>
+          <li class="social-icons__item"><a href="https://t.me/htmlacademy"><img src="./images/social-telegram.svg" alt="telegram"></a></li>
+          <li class="social-icons__item"><a href="https://www.youtube.com/user/htmlacademyru"><img src="./images/social-youtube.svg"
                 alt="youtube"></a></li>
         </ul>
-        <address><a href="tel:88128121212">+7 (812) 812-12-12</a></address>
+        <address><a href="tel:88128121212" class="footer__tel">+7 (812) 812-12-12</a></address>
         <a href="https://htmlacademy.ru/"><img src="./images/HTML-Academy.svg" alt="Логотип академии"></a>
       </div>
+    </div>
     </footer>
   </main>
 </body>

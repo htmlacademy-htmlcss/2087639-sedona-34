@@ -307,6 +307,11 @@
   padding-bottom: 94px;
 }
 
+.subscribe__catalog{
+  background-image: none;
+  background: #fff;
+}
+
 .subcribe__form {
   display: flex;
   flex-direction: row;
@@ -335,6 +340,14 @@
   text-align: center;
   color: #FFFFFF;
   padding-bottom: 46px;
+}
+
+.subscribe__title_theme{
+  color: #000000;
+}
+
+.subcribe__text_theme{
+  color: #000000;
 }
 
 .subcribe__field {
@@ -576,6 +589,9 @@
   margin: 0;
   padding: 0;
 }
+.availability{
+  background: #fff;
+}
 .availability__sort{
   display: flex;
   margin: 0;
@@ -590,4 +606,21 @@
 .availability__results{
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+}
+.diviver{
+  border: 1px solid #E6E6E6;
+  width: 1055px;
+  margin: 0 auto;
+}
+.pagination{
+  display: flex;
+}
+.pagination__list{
+  display: flex;
+  list-style: none;
+}
+.pagination__count{
+  display: flex;
+  list-style: none;
 }
