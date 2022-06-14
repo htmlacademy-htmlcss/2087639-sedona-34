@@ -124,10 +124,10 @@
         </fieldset>
         <ul class="filter__buttons">
           <li class="filter__submit">
-            <button class="button" type="submit">Применить</button>
+            <button class="button__apply" type="submit">Применить</button>
           </li>
           <li class="filter__reset">
-            <input type="reset" value="Сбросить" class="button__reset">
+            <button type="reset" class="button__reset" type="submit">Сбросить</button>
           </li>
         </ul>
       </form>
@@ -145,19 +145,19 @@
           </select>
         </form>
         <ul class="availability__view">
-          <li>
+          <li class="availability__item">
             <a href="#">
               <img src="./images/view-table.svg" class="page-catalog__table" alt="показать таблицей">
               <p class="visually-hidden">Таблица</p>
             </a>
           </li>
-          <li>
+          <li class="availability__item">
             <a href="#">
               <img src="./images/view-slideshow.png" class="page-catalog__slideshow" alt="показать слайдшоу">
               <p class="visually-hidden">Слайдшоу</p>
             </a>
           </li>
-          <li>
+          <li class="availability__item">
             <a href="#">
               <img src="./images/view-list.png" class="page-catalog__list" alt="показать списком">
               <p class="visually-hidden">Список</p>
@@ -167,26 +167,31 @@
       </div>
 
       <ul class="availability__results">
-        <li class="availability__list">
-          <img src="./images/amara-resort-spa.jpg" alt="Amara resort spa">
-          <h3>Amara Resort & Spa</h3>
-          <div class="list__text">
-            <p>Гостиница</p>
-            <p>От 4000 ₽</p>
+        <li class="availability__card">
+          <img src="./images/amara-resort-spa.jpg" alt="Amara resort spa" class="availability__pic">
+          <h3 class="availability__title">Amara Resort & Spa</h3>
+          <div class="availability__price">
+            <p class="availability__paragraph">Гостиница</p>
+            <p class="availability__paragraph">От 4000 ₽</p>
           </div>
-          <div class="list__button">
-            <a href="#">подробнее</a>
-            <a href="#">в избранное</a>
+          <div class="availability__buttons">
+            <a class="availability__button availability__button_more" href="#">подробнее</a>
+            <a class="availability__button availability__button_favourites" href="#">в избранное</a>
           </div>
-          <div class="list__rating">
-            <p>stars</p>
-            <p>Рейтинг: 8,5</p>
+          <div class="availability__rating">
+            <ul class="availability__stars">
+              <li class="availability__star"><img src="./images/star.svg" alt="рейтинговая звезда"></li>
+              <li class="availability__star"><img src="./images/star.svg" alt="рейтинговая звезда"></li>
+              <li class="availability__star"><img src="./images/star.svg" alt="рейтинговая звезда"></li>
+              <li class="availability__star"><img src="./images/star.svg" alt="рейтинговая звезда"></li>
+            </ul>
+            <p class="availability__voting">Рейтинг: 8,5</p>
           </div>
         </li>
 
-        <li class="results__list">
+        <li class="availability__card">
           <img src="./images/villas-at-poco-diablo.jpg" alt="villas at poco diablo">
-          <h3>Villas at Poco Diablo</h3>
+          <h3 class="availability__title">Villas at Poco Diablo</h3>
           <div class="list__text">
             <p>Гостиница</p>
             <p>От 5000 ₽</p>
@@ -200,7 +205,7 @@
             <p>Рейтинг: 9,2</p>
           </div>
         </li>
-        <li class="results__list">
+        <li class="availability__card">
           <img src="./images/desert-quail-inn.jpg" alt="Desert Quail Inn">
           <h3>Desert Quail Inn</h3>
           <div class="list__text">
@@ -216,8 +221,8 @@
             <p>Рейтинг: 6,9</p>
           </div>
         </li>
-        <li class="results__list">
-          <img src="./images/greentree-inn.jpg" alt="Green Tree Inn">
+        <li class="availability__card">
+          <img src="./images/greentree-inn.jpg" alt="Green Tree Inn" class="availability__pic">
           <h3>GreenTree Inn</h3>
           <div class="list__text">
             <p>Гостиница</p>
@@ -258,7 +263,8 @@
     </section>
     <section class="subscribe subscribe__catalog">
       <h5 class="subscribe__title subscribe__title_theme">Подпишитесь на рассылку</h5>
-      <p class="subcribe__text subcribe__text_theme">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="subcribe__text subcribe__text_theme">Только полезная информация и никакого спама, честное бойскаутское!
+      </p>
       <form class="subcribe__form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="subcribe__field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
         <button class="subcribe__button" type="submit">
@@ -268,18 +274,20 @@
     </section>
     <footer class="footer">
       <div class="footer__line">
-      <div class="footer__contacts">
-        <h4 class="visually-hidden">Контакты</h4>
-        <ul class="social-icons">
-          <li class="social-icons__item"><a href="https://vk.com/htmlacademy"><img src="./images/social-vk.svg" alt="vkontakte"></a></li>
-          <li class="social-icons__item"><a href="https://t.me/htmlacademy"><img src="./images/social-telegram.svg" alt="telegram"></a></li>
-          <li class="social-icons__item"><a href="https://www.youtube.com/user/htmlacademyru"><img src="./images/social-youtube.svg"
-                alt="youtube"></a></li>
-        </ul>
-        <address><a href="tel:88128121212" class="footer__tel">+7 (812) 812-12-12</a></address>
-        <a href="https://htmlacademy.ru/"><img src="./images/HTML-Academy.svg" alt="Логотип академии"></a>
+        <div class="footer__contacts">
+          <h4 class="visually-hidden">Контакты</h4>
+          <ul class="social-icons">
+            <li class="social-icons__item"><a href="https://vk.com/htmlacademy"><img src="./images/social-vk.svg"
+                  alt="vkontakte"></a></li>
+            <li class="social-icons__item"><a href="https://t.me/htmlacademy"><img src="./images/social-telegram.svg"
+                  alt="telegram"></a></li>
+            <li class="social-icons__item"><a href="https://www.youtube.com/user/htmlacademyru"><img
+                  src="./images/social-youtube.svg" alt="youtube"></a></li>
+          </ul>
+          <address><a href="tel:88128121212" class="footer__tel">+7 (812) 812-12-12</a></address>
+          <a href="https://htmlacademy.ru/"><img src="./images/HTML-Academy.svg" alt="Логотип академии"></a>
+        </div>
       </div>
-    </div>
     </footer>
   </main>
 </body>
