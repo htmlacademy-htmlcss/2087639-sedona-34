@@ -257,12 +257,16 @@
   font-size: 24px;
   line-height: 28px;
   width: 230px;
+  padding: 0;
   padding-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .benefit__number {
+  margin: 0;
+  padding: 0;
   padding-bottom: 30px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
@@ -273,6 +277,8 @@
 }
 
 .benefit__paragraph {
+  margin: 0;
+  padding: 0;
   width: 230px;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
@@ -316,13 +322,14 @@
 .subscribe {
   background: #82B3D3;
   background-image: url(../images/subscribe.jpg);
-  height: 411px;
   background-size: 100%;
+  background-repeat: no-repeat;
+  height: 411px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin: 0;
+  padding:0;
 }
 
 .subscribe__catalog {
@@ -345,7 +352,10 @@
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
   padding-bottom: 29px;
+  padding-top: 94px;
 }
 
 .subcribe__text {
@@ -357,6 +367,8 @@
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
   padding-bottom: 46px;
 }
 
@@ -379,6 +391,7 @@
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  box-sizing: border-box;
   padding: 20px 0 19px 22px;
   border: 0;
 }
@@ -411,7 +424,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 91px 0 93px 0;
 }
 
 .find-hotel__title {
@@ -431,12 +443,20 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: #333333;
+  padding: 0;
   padding-bottom: 56px;
   margin: 0;
 }
-
+  .find-hotel__center-paragraph{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .find-hotel__start-paragraph{
+    margin: 0;
+    padding: 0;
+  }
 .find-hotel__button {
   background: #756157;
   border-radius: 4px;
@@ -454,7 +474,8 @@
 
 .footer {
   height: 120px;
-  left: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__line {
@@ -466,14 +487,18 @@
 .footer__contacts {
   display: flex;
   flex-direction: row;
-  padding: 40px 70px 30px 70px;
+  margin: 0;
+  padding: 45px 70px 30px 70px;
   align-items: center;
+  justify-content: center;
 }
 
 .social-icons {
   list-style: none;
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
   margin-right: 249.17px;
 }
 
