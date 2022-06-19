@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <base href="https://htmlacademy-htmlcss.github.io/2087639-sedona-34/4/">
+</head>
+
+<body class="page">
+  <header class="header">
+    <a href="./index.html" class="header__index"><img src="./images/logo.svg" class="header__logo"
+        alt="Логотип сайта"></a>
+    <nav class="header__navigation">
+      <ul class="header__links">
+        <li class="header__link current-link"><a href="#">Главная</a></li>
+        <li class="header__link"><a href="#">О Седоне</a></li>
+        <li class="header__link"><a href="./catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+    <ul class="header__icons">
+      <li class=""><a href="#"><img src="./images/search.png" alt="Кнопка поиска">
+          <span class="visually-hidden">Кнопка поиска</span>
+        </a></li>
+      <li class="header__like-button"><a href="#">
+          <span class="visually-hidden">Кнопка нравится</span>
+          <img src="./images/heart.png" alt="кнопка лайка"></a>
+        <div class="likes-counter">12</div>
+      </li>
+    </ul>
+    <button class="header__button">Хочу сюда!</button>
+  </header>
+  <main class="main main-container">
+    <section class="hero">
+      <div class="hero__image-wrapper">
+        <img src="./images/hero-pic.png" alt="Добро пожаловать в Седону! Потому что Гранд Каньон отстой"
+          class="hero__img">
+        <h1 class="visually-hidden">SEDONA</h1>
+        <span class="visually-hidden">К великолепному</span>
+        <span class="visually-hidden">Потому что большой каньон - отстой!</span>
+      </div>
+      <div class="hero__introduction">
+        <h1 class="hero__header">Седона — небольшой городок в Аризоне,
+          заслуживающий большего!</h1>
+        <p class="hero__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <h2 class="visually-hidden">ПРЕИМУЩЕСТВА</h2>
+      <ul class="benefit__list">
+        <li class="benefit__item benefit__item_dark">
+          <h3 class="benefit__title">Настоящий городок</h3>
+          <p class="benefit__number">— №1 —</p>
+          <p class="benefit__paragraph">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </li>
+        <li class="benefit__image"></li>
+        <li class="benefit__item benefit__item_light">
+          <img src="./images/home.svg" class="benefit__pic" alt="схематичное изображение домика">
+          <h3 class="benefit__title">Жильё</h3>
+          <p class="benefit__paragraph">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+        </li>
+        <li class="benefit__item">
+          <img src="./images/food.svg" class="benefit__pic" alt="схематичное изображение еды">
+          <h3 class="benefit__title">Еда</h3>
+          <p class="benefit__paragraph">Всегда заказывайте<br>
+            топовый фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+        <li class="benefit__item benefit__item_light">
+          <img src="./images/gift.svg" class="benefit__pic" alt="схематичное изображение подарка">
+          <h3 class="benefit__title">Сувениры</h3>
+          <p class="benefit__paragraph">Не только китайского,<br>
+            но и настоящего местного производства!</p>
+        </li>
+      </ul>
+      <ul class="benefit__list">
+        <li class="benefit__second-pic"></li>
+        <li class="benefit__item benefit__item_dark">
+          <h3 class="benefit__title">Там есть<br>
+            мост дьявола</h3>
+          <p class="benefit__number">— №2 —</p>
+          <p class="benefit__paragraph">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </li>
+        <li class="benefit__item benefit__item_light-bottom">
+          <h3 class="benefit__title">Небольшая площадь</h3>
+          <p class="benefit__number">— №3 —</p>
+          <p class="benefit__paragraph">Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="benefit__item benefit__item_middle">
+          <h3 class="benefit__title">Красивая<br>дорога</h3>
+          <p class="benefit__number">— №4 —</p>
+          <p class="benefit__paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="benefit__item benefit__item_light-bottom">
+          <h3 class="benefit__title">Мало<br> туристов</h3>
+          <p class="benefit__number">— №5 —</p>
+          <p class="benefit__paragraph">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="find-hotel">
+      <h4 class="find-hotel__title">Заинтересовались?</h4>
+      <div class="find-hotel__text">
+        <p class="find-hotel__center-paragraph">Укажите предполагаемые даты поездки,</p>
+        <p class="find-hotel__start-paragraph">и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      </div>
+      <button class="find-hotel__button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+    </section>
+    <section class="subscribe">
+      <h5 class="subscribe__title">Подпишитесь на рассылку</h5>
+      <p class="subcribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subcribe__form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="subcribe__field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+        <button class="subcribe__button" type="submit">
+          <span>Подписаться</span>
+        </button>
+      </form>
+    </section>
+  </main>
+    <footer class="footer">
+      <div class="footer__line">
+        <div class="footer__contacts">
+          <h4 class="visually-hidden">Контакты</h4>
+          <ul class="social-icons">
+            <li class="social-icons__item"><a href="https://vk.com/htmlacademy"><img src="./images/social-vk.svg"
+                  alt="vkontakte"></a></li>
+            <li class="social-icons__item"><a href="https://t.me/htmlacademy"><img src="./images/social-telegram.svg"
+                  alt="telegram"></a></li>
+            <li class="social-icons__item"><a href="https://www.youtube.com/user/htmlacademyru"><img
+                  src="./images/social-youtube.svg" alt="youtube"></a></li>
+          </ul>
+          <address><a href="tel:88128121212" class="footer__tel">+7 (812) 812-12-12</a></address>
+          <a href="https://htmlacademy.ru/"><img src="./images/HTML-Academy.svg" alt="Логотип академии"></a>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
