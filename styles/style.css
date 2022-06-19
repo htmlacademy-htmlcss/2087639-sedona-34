@@ -13,9 +13,11 @@
   src: local("PT Sans"), url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
-html{
+
+html {
   height: 100%;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -61,9 +63,9 @@ html{
 
 .header__logo {
   height: 70px;
-  margin-right: 47px;
   z-index: 5;
   padding: 0;
+  padding-right: 47px;
 }
 
 .header__links {
@@ -96,6 +98,12 @@ html{
   line-height: 26px;
   text-transform: capitalize;
   color: #000000;
+}
+
+.header__link a:hover {
+  padding-bottom: 19px;
+  border-bottom: 2px solid #756257;
+
 }
 
 .header__icons {
@@ -158,13 +166,29 @@ html{
   box-sizing: border-box;
   text-align: center;
   margin-top: 11px;
+  cursor: pointer;
 }
 
+.header__button:hover {
+  background: #615048;
+}
+
+.header__button:focus {
+  background: #615048;
+}
+
+.header__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.header__button:disabled{
+  background: #E5E5E5;
+}
 .main {
   max-width: 1200px;
   margin: 0 auto;
 }
-.main-container{
+
+.main-container {
   flex-grow: 1;
 }
 
