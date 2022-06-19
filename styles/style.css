@@ -622,7 +622,18 @@ html {
   color: rgba(117, 97, 87, 0.3);
   ;
 }
-
+.html-link svg{
+  fill: #000000;
+}
+.html-link svg:hover{
+  fill: #756157;
+}
+.html-link svg:focus{
+  fill: #756157;
+}
+.html-link svg:active{
+  fill: rgba(117, 97, 87, 0.3);
+}
 /* ==================================== catalog ====================================*/
 .catalog {
   margin: 0 auto;
