@@ -4,7 +4,6 @@
   font-weight: 400;
   src: local("PT Sans"), url(../fonts/ptsans-400.woff2) format("woff2");
   font-display: swap;
-  /* поточнее разобраться что такое */
 }
 
 @font-face {
@@ -14,7 +13,9 @@
   src: local("PT Sans"), url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
-
+html{
+  height: 100%;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,6 +36,9 @@
   padding: 0;
   font-family: "PT Sans", sans-serif;
   color: #333333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .header {
@@ -44,7 +48,7 @@
   height: 65px;
   background: #fff;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 70px 0 70px;
 }
 
 .header__index {
@@ -57,7 +61,6 @@
 
 .header__logo {
   height: 70px;
-  margin-left: 70px;
   margin-right: 47px;
   z-index: 5;
   padding: 0;
@@ -160,6 +163,9 @@
 .main {
   max-width: 1200px;
   margin: 0 auto;
+}
+.main-container{
+  flex-grow: 1;
 }
 
 .hero {
@@ -477,7 +483,7 @@
 
 .footer {
   height: 120px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -702,7 +708,7 @@
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 0 0 56px 0;
 }
 
 .availability__text {
@@ -736,7 +742,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 0 0 66px 0;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
@@ -745,7 +751,6 @@
 }
 
 .availability__card {
-  outline: 1px solid red;
   padding: 20px;
   max-width: 340px;
   height: 438px;
@@ -862,20 +867,63 @@
   border: 1px solid #E6E6E6;
   width: 1055px;
   margin: 0 auto;
-
-
 }
 
 .pagination {
   display: flex;
+  margin: 0;
+  padding: 30px 0 25px 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .pagination__list {
   display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  align-items: center;
+}
+
+.pagination__item {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+  background: #82B3D3;
+  color: #FFFFFF;
+  margin-right: 8px;
+}
+
+.pagination__item_active {
+  background: #F2F2F2;
+  border: none;
+}
+
+.pagination__item:last-child {
+  margin-right: 0;
+}
+
+.pagination__link {
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.pagination__link_active {
+  color: #000000;
 }
 
 .pagination__count {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
