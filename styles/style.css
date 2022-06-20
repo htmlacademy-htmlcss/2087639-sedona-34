@@ -622,18 +622,23 @@ html {
   color: rgba(117, 97, 87, 0.3);
   ;
 }
-.html-link svg{
+
+.html-link svg {
   fill: #000000;
 }
-.html-link svg:hover{
+
+.html-link svg:hover {
   fill: #756157;
 }
-.html-link svg:focus{
+
+.html-link svg:focus {
   fill: #756157;
 }
-.html-link svg:active{
+
+.html-link svg:active {
   fill: rgba(117, 97, 87, 0.3);
 }
+
 /* ==================================== catalog ====================================*/
 .catalog {
   margin: 0 auto;
@@ -691,6 +696,30 @@ html {
 
 .breadcrubs__item:last-child {
   margin-right: 0;
+}
+
+.breadcrubs__status {
+  fill: #fff;
+}
+
+.breadcrubs__status:hover {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrubs__status:active {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrubs__item_status {
+  cursor: pointer;
+}
+
+.breadcrubs__item_status:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrubs__item_status:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter__form {
@@ -774,6 +803,22 @@ html {
   cursor: pointer;
 }
 
+.button__apply:hover {
+  background: #68A2CA;
+}
+
+.button__apply:focus {
+  background: #68A2CA;
+}
+
+.button__apply:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button__apply:disabled {
+  background: #E5E5E5;
+}
+
 .filter__reset {
   margin: 0;
   padding: 0;
@@ -804,6 +849,26 @@ html {
   align-items: center;
   margin: 0;
   padding: 0 0 56px 0;
+}
+
+.availability__link {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 15px 16px;
+}
+
+.availability__link:hover {
+  border-color: #000000;
+}
+
+.availability__link:focus {
+  border-color: #68A2CA;
+}
+
+.availability__link:active {
+  border-color: #000000;
 }
 
 .availability__text {
