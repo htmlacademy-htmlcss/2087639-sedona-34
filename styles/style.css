@@ -1058,7 +1058,7 @@ html {
   padding-inline-start: 0;
 }
 
-.availability__card {
+.card {
   padding: 20px;
   max-width: 340px;
   height: 438px;
@@ -1066,17 +1066,17 @@ html {
   box-sizing: border-box;
 }
 
-.availability__card:nth-child(3n) {
+.card:nth-child(3n) {
   margin-right: 0;
 }
 
-.availability__pic {
+.card__pic {
   width: 300px;
   height: 211px;
   font-size: 0;
 }
 
-.availability__title {
+.card__title {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1088,14 +1088,14 @@ html {
   padding-top: 16px;
 }
 
-.availability__price {
+.card__price {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   column-gap: 20px;
   padding-top: 16px;
 }
 
-.availability__paragraph {
+.card__paragraph {
   margin: 0;
   padding: 0;
   margin-block-start: 0;
@@ -1104,14 +1104,14 @@ html {
   margin-inline-end: 0;
 }
 
-.availability__buttons {
+.card__buttons {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   column-gap: 20px;
   padding-top: 16px;
 }
 
-.availability__button {
+.card__button {
   text-decoration: none;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1126,64 +1126,64 @@ html {
   text-align: center;
 }
 
-.availability__button_more {
+.card__button_more {
   background: #756157;
 }
 
-.availability__button_more:hover {
+.card__button_more:hover {
   background: #615048;
 }
 
-.availability__button_more:focus {
+.card__button_more:focus {
   background: #615048;
 }
 
-.availability__button_more:active {
+.card__button_more:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.availability__button_more:disabled {
+.card__button_more:disabled {
   background: #E5E5E5;
 }
 
-.availability__button_favourites {
+.card__button_favourites {
   background: #82B3D3;
 }
 
-.availability__button_favourites:hover {
+.card__button_favourites:hover {
   background: #68A2CA;
 }
 
-.availability__button_favourites:focus {
+.card__button_favourites:focus {
   background: #68A2CA;
 }
 
-.availability__button_favourites:active {
+.card__button_favourites:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.availability__button_active {
+.card__button_active {
   background: #7DB54F;
   border-radius: 4px;
 }
 
-.availability__button_active:hover {
+.card__button_active:hover {
   background: #6C9E42;
 }
 
-.availability__button_active:focus {
+.card__button_active:focus {
   background: #6C9E42;
 }
 
-.availability__button_active:active {
+.card__button_active:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.availability__button_active:disabled {
+.card__button_active:disabled {
   background: #E5E5E5;
 }
 
-.availability__rating {
+.card__rating {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   column-gap: 20px;
@@ -1192,7 +1192,7 @@ html {
   align-items: center;
 }
 
-.availability__stars {
+.card__stars {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1201,7 +1201,7 @@ html {
   column-gap: 6px;
 }
 
-.availability__voting {
+.card__voting {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
