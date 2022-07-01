@@ -10,7 +10,7 @@
 </head>
 
 <body class="page">
-  <header class="header header__catalog">
+  <header class="header">
     <a href="./index.html" class="header__index"><img src="./images/logo.svg" class="header__logo"
         alt="Логотип сайта"></a>
     <nav class="header__navigation">
@@ -58,12 +58,6 @@
               </svg>
             </a>
           </li>
-          <li class="breadcrubs__item"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" viewBox="0 0 6 9"
-              fill="none">
-              <path
-                d="M5.05145 4.0749L1.25145 0.674902C1.05145 0.474902 0.651448 0.474902 0.351448 0.674902C0.0514485 0.874902 0.151448 1.2749 0.351448 1.4749L3.65145 4.4749L0.451448 7.4749C0.251448 7.6749 0.251448 8.0749 0.451448 8.2749C0.451448 8.3749 0.751448 8.4749 0.851448 8.4749C0.951449 8.4749 1.15145 8.3749 1.25145 8.2749L5.05145 4.8749C5.35145 4.6749 5.35145 4.2749 5.05145 4.0749Z"
-                fill="white" />
-            </svg></li>
           <li class="breadcrubs__item breadcrubs__item_status">Гостиницы</li>
         </ul>
       </header>
@@ -76,20 +70,23 @@
           <ul class="filter__list">
             <li class="filter__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="swimming-pool" checked>
-                Бассейн
+                <input class="control__input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Бассейн</span>
               </label>
             </li>
             <li class="filter__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="parking" checked>
-                Парковка
+                <input class="control__input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Парковка</span>
               </label>
             </li>
             <li class="filter__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="wi-fi">
-                Wi-Fi
+                <input class="control__input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Wi-Fi</span>
               </label>
             </li>
           </ul>
@@ -102,44 +99,52 @@
           <ul class="filter__list">
             <li class="filter__item">
               <label class="control">
-                <input class="control__input" type="radio" name="type-of-place" value="hotel" checked>
-                Гостиница
+                <input class="control__input visually-hidden" type="radio" name="type-of-place" value="hotel" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Гостиница</span>
               </label>
             </li>
             <li class="filter__item">
               <label class="control">
-                <input class="control__input" type="radio" name="type-of-place" value="motel">
-                Мотель
+                <input class="control__input visually-hidden" type="radio" name="type-of-place" value="hotel" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Мотель</span>
               </label>
             </li>
             <li class="filter__item">
               <label class="control">
-                <input class="control__input" type="radio" name="type-of-place" value="apartments">
-                Апартаменты
+                <input class="control__input visually-hidden" type="radio" name="type-of-place" value="hotel" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Апартаменты</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter__group">
-          <legend class="filter__legend">
-            Стоимость, ₽:
-          </legend>
-          <ul class="filter__price">
-            <li>
-              <label class="control">
-                <input type="text" class="control__input" name="min-cost" value="от">
-              </label>
-              <label class="control">
-                <input type="text" class="control__input" name="max-cost" value="до">
-              </label>
-            </li>
-            <li>
-              <label class="control">
-                <input type="range" name="price-counter" min="0" max="9000" step="1">
-              </label>
-            </li>
-          </ul>
+        <fieldset class="range">
+          <legend class="range__title">Стоимость, ₽:</legend>
+          <div class="range__inputs">
+            <div class="range__min-wrapper">
+              <input type="text" name="min-price" class="range__input" value="0">
+              <span>от</span>
+            </div>
+            <div class="range__divider"></div>
+            <div class="range__max-wrapper">
+              <input type="text" name="max-price" class="range__input" value="9000">
+              <span>до</span>
+            </div>
+          </div>
+          <div class="range__scale">
+            <div class="range__bar">
+              <button class="range__toggle range__toggle_min">
+                <span class="visually-hidden">Изменить минимальную цену.</span>
+              </button>
+              <button class="range__toggle range__toggle_max">
+                <span class="visually-hidden">Изменить максимальную цену.</span>
+              </button>
+            </div>
         </fieldset>
+
+
         <ul class="filter__buttons">
           <li class="filter__submit">
             <button class="button__apply" type="submit">Применить</button>
@@ -165,7 +170,8 @@
         <ul class="availability__view">
           <li class="availability__item">
             <a href="#" class="availability__link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none" aria-label="показать таблицей">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                aria-label="показать таблицей">
                 <path d="M4 0H0V6H4V0Z" fill="black" />
                 <path d="M16 0H12V6H16V0Z" fill="black" />
                 <path d="M10 0H6V6H10V0Z" fill="black" />
@@ -178,7 +184,8 @@
           </li>
           <li class="availability__item">
             <a href="#" class="availability__link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none" aria-label="показать слайдшоу">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                aria-label="показать слайдшоу">
                 <path d="M16 12H0V14H16V12Z" fill="black" />
                 <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
               </svg>
@@ -187,7 +194,8 @@
           </li>
           <li class="availability__item">
             <a href="#" class="availability__link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none" aria-label="показать списком">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                aria-label="показать списком">
                 <path d="M2 0H0V2H2V0Z" fill="black" />
                 <path d="M16 0H4V2H16V0Z" fill="black" />
                 <path d="M2 4H0V6H2V4Z" fill="black" />
@@ -235,7 +243,7 @@
           </div>
           <div class="availability__buttons">
             <a class="availability__button availability__button_more" href="#">подробнее</a>
-            <a class="availability__button availability__button_favourites" href="#">в избранное</a>
+            <a class="availability__button availability__button_active" href="#">в избранном</a>
           </div>
           <div class="availability__rating">
             <ul class="availability__stars">
@@ -293,12 +301,11 @@
       <div class="diviver"></div>
       <div class="pagination">
         <ul class="pagination__list">
-          <li class="pagination__item pagination__item_active"><a href="#"
-              class="pagination__link pagination__link_active">1</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link pagination__link_pressed">1</a></li>
           <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
           <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
           <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
-          <li class="pagination__item">...</li>
+          <li class="pagination__item pagination__item_ellipsis">...</li>
           <li class="pagination__item"><a href="#" class="pagination__link">10</a></li>
         </ul>
         <ul class="pagination__count">
