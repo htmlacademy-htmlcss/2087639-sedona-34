@@ -44,7 +44,7 @@
     <button class="header__button">Хочу сюда!</button>
   </header>
 
-  <main class="catalog">
+  <main class="catalog main-container">
     <section class="filter">
       <header class="filter__header">
         <h1 class="filter__title">Гостиницы Седоны</h1>
@@ -63,28 +63,26 @@
       </header>
 
       <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="filter__group">
-          <legend class="filter__legend">
-            Инфраструктура:
-          </legend>
-          <ul class="filter__list">
-            <li class="filter__item">
+        <fieldset class="filter-catalog__group">
+          <legend class="filter-catalog__title">Инфраструктура:</legend>
+          <ul class="filter-catalog__list">
+            <li class="filter-catalog__item">
               <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                <input class="visually-hidden control__input" type="checkbox" name="swimming-pool" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Бассейн</span>
               </label>
             </li>
-            <li class="filter__item">
+            <li class="filter-catalog__item">
               <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                <input class="visually-hidden control__input" type="checkbox" name="parking" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Парковка</span>
               </label>
             </li>
-            <li class="filter__item">
+            <li class="filter-catalog__item">
               <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                <input class="visually-hidden control__input" type="checkbox" name="wi-fi">
                 <span class="control__mark"></span>
                 <span class="control__label">Wi-Fi</span>
               </label>
@@ -92,34 +90,33 @@
           </ul>
         </fieldset>
 
-        <fieldset class="filter__group">
-          <legend class="filter__legend">
-            Тип жилья:
-          </legend>
-          <ul class="filter__list">
-            <li class="filter__item">
+        <fieldset class="filter-catalog__group">
+          <legend class="filter-catalog__title">Тип жилья:</legend>
+          <ul class="filter-catalog__list">
+            <li class="filter-catalog__item">
               <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="type-of-place" value="hotel" checked>
+                <input class="visually-hidden control__input" type="radio" name="hotel" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Гостиница</span>
               </label>
             </li>
-            <li class="filter__item">
+            <li class="filter-catalog__item">
               <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="type-of-place" value="hotel" checked>
+                <input class="visually-hidden control__input" type="radio" name="motel">
                 <span class="control__mark"></span>
                 <span class="control__label">Мотель</span>
               </label>
             </li>
-            <li class="filter__item">
+            <li class="filter-catalog__item">
               <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="type-of-place" value="hotel" checked>
+                <input class="visually-hidden control__input" type="radio" name="apartments">
                 <span class="control__mark"></span>
                 <span class="control__label">Апартаменты</span>
               </label>
             </li>
           </ul>
         </fieldset>
+
         <fieldset class="range">
           <legend class="range__title">Стоимость, ₽:</legend>
           <div class="range__inputs">
@@ -127,7 +124,6 @@
               <input type="text" name="min-price" class="range__input" value="0">
               <span>от</span>
             </div>
-            <div class="range__divider"></div>
             <div class="range__max-wrapper">
               <input type="text" name="max-price" class="range__input" value="9000">
               <span>до</span>
@@ -161,11 +157,13 @@
       <div class="availability__sort">
         <p class="availability__text">Найдено гостиниц: 38</p>
         <form class="availability__form">
-          <select class="availability__select" aria-label="Сортировка">
-            <option value="popular">Сначала дешёвые</option>
-            <option value="cheap">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
+          <div class="availability__select">
+            <select class="select__control" aria-label="Сортировка">
+              <option value="popular">Сначала дешёвые</option>
+              <option value="cheap">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+          </div>
         </form>
         <ul class="availability__view">
           <li class="availability__item">
@@ -309,10 +307,10 @@
           <li class="pagination__item"><a href="#" class="pagination__link">10</a></li>
         </ul>
         <ul class="pagination__count">
-          <li>Гостиниц на странице:</li>
+          <li class="pagination__result">Гостиниц на странице:</li>
           <li>
-            <form>
-              <select name="items-on-page">
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <select name="items-on-page" class="select__page">
                 <option value="4">4</option>
               </select>
             </form>
@@ -320,13 +318,12 @@
         </ul>
       </div>
     </section>
-    <section class="subscribe subscribe__catalog">
-      <h5 class="subscribe__title subscribe__title_theme">Подпишитесь на рассылку</h5>
-      <p class="subcribe__text subcribe__text_theme">Только полезная информация и никакого спама, честное бойскаутское!
-      </p>
-      <form class="subcribe__form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="subcribe__field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
-        <button class="subcribe__button" type="submit">
+    <section class="subscribe subscribe_catalog">
+      <h5 class="subscribe__title subscribe__title_catalog">Подпишитесь на рассылку</h5>
+      <p class="subscribe__text subscribe__text_catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="subscribe__field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+        <button class="subscribe__button" type="submit">
           <span>Подписаться</span>
         </button>
       </form>
