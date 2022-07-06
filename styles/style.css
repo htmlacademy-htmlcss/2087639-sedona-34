@@ -1652,6 +1652,20 @@ html {
   justify-content: space-between;
 }
 
+.look-form__option-date:hover {
+  background: #E6E6E6;
+}
+
+.look-form__option-date:focus-within {
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+.look-form__option-date:active {
+  background: #fff;
+  border: 2px solid #000000;
+}
+
 .look-form__message {
   margin: 0;
   padding: 0;
@@ -1720,15 +1734,49 @@ html {
 }
 
 .look-form__minus {
-  width: 13px;
-  height: 1px;
+  width: 25px;
+  height: 25px;
   background: url(../images/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.look-form__minus:hover {
+  opacity: 1;
+}
+
+.look-form__minus:focus-within {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.look-form__minus:active {
+  opacity: 0.2;
 }
 
 .look-form__plus {
-  width: 13px;
-  height: 13px;
+  width: 25px;
+  height: 25px;
   background: url(../images/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.look-form__plus:hover {
+  opacity: 1;
+}
+
+.look-form__plus:focus-within {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.look-form__plus:active {
+  opacity: 0.2;
 }
 
 .look-form__icon {
@@ -1743,6 +1791,11 @@ html {
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
+}
+
+.look-form__icon:hover {
+  background: #68A2CA;
 }
 
 .look-form__dot-img {
@@ -1765,6 +1818,20 @@ html {
   box-sizing: border-box;
 }
 
+.look-form__button:hover {
+  background: #68A2CA;
+}
+
+.look-form__button:focus {
+  background: #68A2CA;
+  border: 3px solid #756257;
+}
+
+.look-form__button:active {
+  background: #68A2CA;
+  color:rgba(255, 255, 255, 0.3);
+}
+
 .popover {
   position: absolute;
   background: #333333;
@@ -1783,7 +1850,8 @@ html {
   right: 106px;
   z-index: 1;
 }
-.popover::before{
+
+.popover::before {
   content: "";
   width: 19px;
   height: 19px;
