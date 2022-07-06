@@ -1597,7 +1597,6 @@ html {
   display: grid;
   grid-template-columns: 575px;
   grid-template-rows: 50px 50px 50px 60px;
-  outline: 1px solid #7DB54F;
   justify-content: center;
   row-gap: 40px;
 }
@@ -1608,7 +1607,6 @@ html {
   box-sizing: border-box;
   padding-bottom: 11px;
   display: grid;
-  outline: 1px solid green;
   grid-template-columns: 155px 420px;
   position: relative;
 }
@@ -1676,7 +1674,6 @@ html {
   grid-template-columns: 288px 230px;
   height: 50px;
   column-gap: 56px;
-  outline: 1px solid #e3ff0e;
   justify-content: center;
 }
 
