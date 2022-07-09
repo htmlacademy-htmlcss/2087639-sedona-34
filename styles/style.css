@@ -46,12 +46,15 @@ html {
 
 .header {
   display: flex;
-  flex-direction: row;
-  max-width: 1200px;
-  height: 65px;
+  justify-content: center;
+  width: 1200px;
+  box-sizing: border-box;
+  min-height: 65px;
   background: #fff;
   margin: 0 auto;
-  padding: 0 70px 0 70px;
+  padding: 0 70px 0 257px;
+  position: relative;
+  font-family: "PT Sans", sans-serif;
 }
 
 .header__index {
@@ -67,22 +70,25 @@ html {
   height: 70px;
   z-index: 5;
   padding: 0;
-  padding-right: 47px;
+  left: 70px;
+  position: absolute;
 }
 
 .header__links {
   display: flex;
   flex-direction: row;
-  max-width: 390px;
+  width: 390px;
+  box-sizing: border-box;
   list-style: none;
   margin: 0;
   padding: 0;
   padding-top: 18px;
   margin-block-start: 0;
   margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   padding-inline-start: 0;
+  flex-wrap: wrap;
 }
 
 .header__link {
@@ -105,17 +111,25 @@ html {
 .header__link a:hover {
   padding-bottom: 19px;
   border-bottom: 2px solid #756257;
-
 }
 
 .header__icons {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 311.11px;
+  box-sizing: border-box;
+  margin: 0;
+  margin-left: 230px;
   justify-content: center;
   align-items: center;
+  
 }
 
 .header__icons li {
@@ -124,7 +138,6 @@ html {
 
 .header__icons li:last-child {
   margin-right: 0;
-  padding-right: 32.3px;
 }
 
 .header__like-button {
@@ -168,6 +181,7 @@ html {
   box-sizing: border-box;
   text-align: center;
   margin-top: 11px;
+  margin-left: auto;
   cursor: pointer;
 }
 
@@ -377,6 +391,7 @@ html {
 
 .find-hotel__text {
   width: 592px;
+  font-family: "PT sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -404,6 +419,7 @@ html {
   height: 60px;
   text-transform: uppercase;
   border: none;
+  font-family: "PT sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -528,7 +544,8 @@ html {
 }
 
 .footer {
-  height: 120px;
+  min-height: 120px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0;
   background: #fff;
@@ -537,6 +554,7 @@ html {
 .footer__contacts {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 0;
   padding: 45px 70px 30px 77px;
   align-items: center;
@@ -546,9 +564,11 @@ html {
 .social-icons {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   margin: 0;
   padding: 0;
+  max-width: 142px;
   margin-right: 249.17px;
 }
 
@@ -650,6 +670,8 @@ html {
 
 .modal-search__header {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   flex-direction: row;
   padding-bottom: 54px;
 }
@@ -661,7 +683,7 @@ html {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  padding: 12px 111px 0 0;
+  padding: 10px 0 0 0;
 }
 
 .modal-search__close-btn {
@@ -703,7 +725,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
   display: grid;
   grid-template-columns: 155px 420px;
   position: relative;
@@ -735,6 +757,7 @@ html {
 
 .look-form__field {
   height: 21px;
+  outline: none;
 }
 
 .look-form__option-date {
@@ -820,6 +843,7 @@ html {
   align-items: center;
   justify-content: center;
   border: none;
+  outline: none;
   background: transparent;
 }
 
@@ -901,12 +925,14 @@ html {
 }
 
 .look-form__button {
+  height: 60px;
   margin: 0;
   padding: 12px 26px;
   background: #83B3D3;
   border-radius: 10px;
-  border: none;
+  border: 3px solid transparent;
   width: 100%;
+  font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -947,6 +973,7 @@ html {
   top: 395px;
   right: 106px;
   z-index: 1;
+  display: none;
 }
 
 .popover::before {
@@ -1263,6 +1290,7 @@ html {
   background: transparent;
   box-sizing: border-box;
   border: none;
+  outline: none;
   color: #fff;
   margin: 0;
   width: 110px;
