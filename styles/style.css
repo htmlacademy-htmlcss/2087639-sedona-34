@@ -167,6 +167,14 @@ html {
 .header__button {
   width: 160px;
   height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+  background: #756157;
+  border-radius: 4px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -174,15 +182,11 @@ html {
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-  border: none;
-  background: #756157;
-  border-radius: 4px;
-  width: 160px;
-  box-sizing: border-box;
   text-align: center;
   margin-top: 11px;
   margin-left: auto;
   cursor: pointer;
+  
 }
 
 .header__button:hover {
@@ -279,7 +283,7 @@ html {
 .benefits__list {
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  grid-template-rows: repeat(2, 384px);
+  grid-template-rows: repeat(4, 384px);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -413,6 +417,11 @@ html {
 }
 
 .find-hotel__button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
   background: #756157;
   border-radius: 4px;
   width: 574px;
@@ -425,7 +434,6 @@ html {
   line-height: 36px;
   color: #fff;
   cursor: pointer;
-  margin: 0;
 }
 
 .find-hotel__button:hover {
@@ -970,10 +978,11 @@ html {
   color: #FFFFFF;
   padding: 15px 18px 18px 22px;
   box-sizing: border-box;
-  top: 395px;
-  right: 106px;
   z-index: 1;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  top: 43px;
+  right: -117px;
 }
 
 .popover::before {
@@ -986,6 +995,17 @@ html {
   position: inherit;
   top: -5px;
   left: 117px;
+}
+.popover-wrapper{
+  position: relative;
+  display: flex;
+}
+.popover-wrapper:hover .popover{
+  visibility: visible;
+  opacity: 1;
+  transition: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
 }
 
 /* ==================================== catalog ====================================*/
@@ -1076,7 +1096,7 @@ html {
 
 .filter-catalog__group {
   margin: 0;
-  margin-right: 70px;
+  margin-right: 72px;
   padding: 0;
   border: none;
 }
@@ -1134,7 +1154,7 @@ html {
   height: 20px;
   background: #FFFFFF;
   border-radius: 4px;
-  border: none;
+  border: 3px solid transparent;
   left: 0;
   box-sizing: border-box;
 }
@@ -1155,6 +1175,7 @@ html {
   background: rgba(255, 255, 255, 0.6);
   border: 3px solid #83B3D3;
   border-radius: 4px;
+
 }
 
 .control:active .control__mark {
@@ -1164,9 +1185,9 @@ html {
 .control__input[type="checkbox"]:checked+.control__mark::before,
 .control__input[type="checkbox"]:checked+.control__mark::after {
   position: absolute;
-  left: 25%;
+  left: 15%;
   right: 0%;
-  top: 30%;
+  top: 20%;
   bottom: 0%;
   background: url(../images/check.svg);
   content: "";
@@ -1180,8 +1201,8 @@ html {
 
 .control__input[type="radio"]:checked+.control__mark::before {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 15%;
+  left: 15%;
   width: 10px;
   height: 10px;
   background: #3F5E72;
@@ -1199,7 +1220,7 @@ html {
   padding-inline-end: 0;
   padding-block-end: 0;
   padding: 0;
-  padding-left: 178.42px;
+  padding-left: 176.42px;
 }
 
 .range__title {
@@ -1420,9 +1441,9 @@ html {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  border: none;
+  border: 3px solid transparent;
   background: rgba(0, 0, 0, 0);
-  margin-top: 20px;
+  margin-top: 17px;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -1557,7 +1578,7 @@ html {
 .card {
   padding: 20px;
   max-width: 340px;
-  height: 438px;
+  min-height: 438px;
   margin-right: 18px;
   box-sizing: border-box;
 }
@@ -1648,6 +1669,7 @@ html {
 
 .card__button_favourites {
   background: #82B3D3;
+  border: none;
 }
 
 .card__button_favourites:hover {
@@ -1664,6 +1686,7 @@ html {
 
 .card__button_active {
   background: #7DB54F;
+  border: none;
   border-radius: 4px;
 }
 

@@ -12,7 +12,7 @@
 <body class="page">
   <header class="header">
     <a href="./index.html" class="header__index"><img src="./images/logo.svg" class="header__logo" alt="Логотип сайта"
-        width="138px" height="70px"></a>
+        width="138" height="70"></a>
     <nav class="header__navigation">
       <ul class="header__links">
         <li class="header__link"><a href="#">Главная</a></li>
@@ -41,14 +41,14 @@
         <div class="likes-counter">12</div>
       </li>
     </ul>
-    <button class="header__button">Хочу сюда!</button>
+    <a href="#" class="header__button">Хочу сюда!</a>
   </header>
   <main class="main main-container">
     <section class="hero">
       <div class="hero__image-wrapper">
         <img src="./images/hero-pic.png" alt="Добро пожаловать в Седону! Потому что Гранд Каньон отстой"
-          class="hero__img" widht="1200px" height="485px">
-        <h1 class="visually-hidden">SEDONA.</h1>
+          class="hero__img" widht="1200" height="485">
+        <h1 class="visually-hidden">Седона.</h1>
         <span class="visually-hidden">К великолепному.</span>
         <span class="visually-hidden">Потому что большой каньон - отстой!</span>
       </div>
@@ -60,7 +60,7 @@
     </section>
 
     <section class="benefits">
-      <h2 class="visually-hidden">ПРЕИМУЩЕСТВА.</h2>
+      <h2 class="visually-hidden">Преимущества.</h2>
       <ul class="benefits__list">
         <li class="benefits__item benefits__item_dark">
           <h3 class="benefits__title">Настоящий городок</h3>
@@ -129,8 +129,6 @@
           <p class="benefits__paragraph">Не только китайского,<br>
             но и настоящего местного производства!</p>
         </li>
-      </ul>
-      <ul class="benefits__list">
         <li class="benefits__second-pic"></li>
         <li class="benefits__item benefits__item_dark">
           <h3 class="benefits__title">Там есть<br>
@@ -157,18 +155,19 @@
     </section>
 
     <section class="find-hotel">
-      <h4 class="find-hotel__title">Заинтересовались?</h4>
+      <h2 class="find-hotel__title">Заинтересовались?</h2>
       <div class="find-hotel__text">
         <p class="find-hotel__center-paragraph">Укажите предполагаемые даты поездки,</p>
         <p class="find-hotel__start-paragraph">и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
-      <button class="find-hotel__button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+      <a href="#" class="find-hotel__button">Поиск гостиницы в седоне</a>
     </section>
     <section class="subscribe">
-      <h4 class="subscribe__title">Подпишитесь на рассылку</h4>
+      <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
       <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="subscribe__field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+        <label for="newsletter-email" class="visually-hidden">Введите Ваш емэйл.</label>
+        <input class="subscribe__field" placeholder="Ваш e-mail" type="email" id="newsletter-email" name="newsletter-email" required>
         <button class="subscribe__button" type="submit">
           <span>Подписаться</span>
         </button>
@@ -178,7 +177,7 @@
   <footer class="footer">
     <div class="footer__line">
       <div class="footer__contacts">
-        <h5 class="visually-hidden">Контакты.</h5>
+        <h3 class="visually-hidden">Контакты.</h3>
         <ul class="social-icons">
           <li class="social-icons__item"><a href="https://vk.com/htmlacademy" target="_blank"><svg
                 xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 15" fill="none">
@@ -241,11 +240,11 @@
     </div>
   </footer>
 
-  <div class="modal-container">
+  <div class="modal-container visually-hidden">
     <div class="modal-search">
       <header class="modal-search__header">
-        <h6 class="modal-search__title">Поиск гостиницы в Седоне</h6>
-        <button class="modal-search__close-btn">
+        <h2 class="modal-search__title">Поиск гостиницы в Седоне.</h2>
+        <button class="modal-search__close-btn" type="button">
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="black"
             class="modal-search__img">
             <path
@@ -255,6 +254,7 @@
         </button>
       </header>
       <section class="modal-forms">
+        <h2 class="modal-search__title visually-hidden">Бронирование номера</h2>
         <form class="look-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="look-form__option">
             <div class="look-form__date">
@@ -342,38 +342,50 @@
               <div class="look-form__adult">
                 <label class="look-form__label" for="adult">Взрослые:</label>
                 <div class="look-form__counter">
-                  <div class="look-form__minus"></div>
+                  <div class="look-form__minus">
+                    <span class="visually-hidden">Уменьшить количество персон.</span>
+                  </div>
+                  <label for="adult" class="visually-hidden">Выбранное число персон</label>
                   <input class="look-form__count" type="text" id="adult" name="adult" placeholder="2">
-                  <div class="look-form__plus"></div>
+                  <div class="look-form__plus">
+                    <span class="visually-hidden">Увеличить количество персон.</span>
+                  </div>
                 </div>
               </div>
               <div class="look-form__children">
-                <label class="look-form__label" for="adult">Дети:</label>
-                <span class="look-form__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="1" viewBox="0 0 1 1" fill="none"
-                    class="look-form__dot-img">
-                    <path d="M1 0H0V1H1V0Z" fill="white" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1" height="6" viewBox="0 0 1 6" fill="none">
-                    <path d="M0 6H1L1 0H0L0 6Z" fill="white" />
-                  </svg>
-                </span>
-                <div class="popover">
-                  <div class="popover__content">
-                    <span>Укажите количество детей, которые будут с вами, возраст которых
-                      от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                    </span>
+                <label class="look-form__label" for="children">Дети:</label>
+                <div class="popover-wrapper">
+                  <div class="look-form__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1" height="1" viewBox="0 0 1 1" fill="none"
+                      class="look-form__dot-img">
+                      <path d="M1 0H0V1H1V0Z" fill="white" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1" height="6" viewBox="0 0 1 6" fill="none">
+                      <path d="M0 6H1L1 0H0L0 6Z" fill="white" />
+                    </svg>
+                    <div class="popover">
+                      <div class="popover__content">
+                        <span>Укажите количество детей, которые будут с вами, возраст которых
+                          от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="look-form__counter look-form__counter_children">
-                  <div class="look-form__minus"></div>
-                  <input class="look-form__count" type="text" id="adult" name="adult" placeholder="1">
-                  <div class="look-form__plus"></div>
+                  <div class="look-form__minus">
+                    <span class="visually-hidden">Уменьшить количество персон.</span>
+                  </div>
+                  <label for="children" class="visually-hidden">Выбранное число персон</label>
+                  <input class="look-form__count" type="text" id="children" name="children" placeholder="1">
+                  <div class="look-form__plus">
+                    <span class="visually-hidden">Увеличить количество персон.</span>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="look-form__btn">
-              <button type="button" class="look-form__button">найти</button>
+              <button type="button" class="look-form__button">Найти</button>
             </div>
           </div>
 
