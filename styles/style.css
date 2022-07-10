@@ -129,7 +129,7 @@ html {
   margin-left: 230px;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .header__icons li {
@@ -186,7 +186,7 @@ html {
   margin-top: 11px;
   margin-left: auto;
   cursor: pointer;
-  
+
 }
 
 .header__button:hover {
@@ -225,12 +225,13 @@ html {
 }
 
 .hero__image-wrapper {
-  max-width: 1200px;
+  width: 1200px;
   height: 485px;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
+  background: url(../images/hero-pic.png);
 }
 
 .hero__introduction {
@@ -300,6 +301,37 @@ html {
   background: #82B3D3;
   padding: 92px 85px 92px 85px;
   color: white;
+}
+
+
+.benefits__pic-home {
+  width: 75px;
+  height: 72px;
+  background: url(../images/benef-home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.benefits__pic-eat {
+  width: 74px;
+  height: 70px;
+  margin-top: 81px;
+  margin-bottom: 31px;
+  background: url(../images/food.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits__pic-gift {
+  width: 64px;
+  height: 76px;
+  margin-top: 78px;
+  margin-bottom: 28px;
+  background: url(../images/gift.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .benefits__title {
@@ -996,11 +1028,13 @@ html {
   top: -5px;
   left: 117px;
 }
-.popover-wrapper{
+
+.popover-wrapper {
   position: relative;
   display: flex;
 }
-.popover-wrapper:hover .popover{
+
+.popover-wrapper:hover .popover {
   visibility: visible;
   opacity: 1;
   transition: all;
