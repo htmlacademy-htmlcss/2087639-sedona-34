@@ -747,6 +747,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: none;
 }
 
 .modal-search__close-btn:hover {
@@ -904,7 +905,7 @@ html {
   color: #000000;
 }
 
-.look-form__minus {
+.look-form__minus{
   width: 25px;
   height: 25px;
   background: url(../images/minus.svg);
@@ -912,19 +913,24 @@ html {
   background-position: center;
   opacity: 0.3;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .look-form__minus:hover {
   opacity: 1;
 }
 
-.look-form__minus:focus-within {
+.look-form__minus:focus {
   border: 3px solid #83B3D3;
   border-radius: 4px;
+  opacity: 1;
 }
 
 .look-form__minus:active {
   opacity: 0.2;
+  outline: none;
+  border: none;
 }
 
 .look-form__plus {
@@ -935,19 +941,24 @@ html {
   background-position: center;
   opacity: 0.3;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .look-form__plus:hover {
   opacity: 1;
 }
 
-.look-form__plus:focus-within {
+.look-form__plus:focus {
   border: 3px solid #83B3D3;
   border-radius: 4px;
+  opacity: 1;
 }
 
 .look-form__plus:active {
   opacity: 0.2;
+  outline: none;
+  border: none;
 }
 
 .look-form__icon {
@@ -989,6 +1000,7 @@ html {
   color: #FFFFFF;
   text-transform: uppercase;
   box-sizing: border-box;
+  outline: none;
 }
 
 .look-form__button:hover {
