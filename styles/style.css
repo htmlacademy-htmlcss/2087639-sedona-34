@@ -43,6 +43,11 @@ html {
   min-height: 100%;
   box-sizing: border-box;
 }
+.page__wrapper{
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
 
 .header {
   display: flex;
@@ -126,18 +131,27 @@ html {
   flex-direction: row;
   box-sizing: border-box;
   margin: 0;
-  margin-left: 230px;
+  margin-left: 221px;
   justify-content: center;
   align-items: center;
 
 }
 
-.header__icons li {
-  margin-right: 23.49px;
+.search-link{
+  text-decoration: none;
+  display: flex;
+  width: 42px;
+  height: 66px;
+  align-items: center;
+  justify-content: center;
 }
-
-.header__icons li:last-child {
-  margin-right: 0;
+.like-link{
+  text-decoration: none;
+  display: flex;
+  width: 42px;
+  height: 66px;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__like-button {
@@ -150,8 +164,8 @@ html {
   height: 20px;
   border-radius: 10px;
   position: absolute;
-  left: 13px;
-  top: -10px;
+  left: 22px;
+  top: 12px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -596,9 +610,9 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
-  padding: 45px 70px 30px 77px;
+  padding: 45px 70px 0 70px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .social-icons {
@@ -608,35 +622,31 @@ html {
   flex-direction: row;
   margin: 0;
   padding: 0;
-  max-width: 142px;
-  margin-right: 249.17px;
 }
 
-.social-icons__item {
-  margin-right: 26.33px;
+.footer__social-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47.33px;
+  height: 40px;
 }
-
-.social-icons__item:nth-child(2) {
-  margin-right: 27.33px;
+.footer__social-link:hover svg{
+  fill: #68A2CA;
 }
-
-.social-icons__item:last-child {
-  margin: 0;
-}
-
 .social-icons__item svg {
   fill: #83B3D3;
 }
 
-.social-icons__item svg:hover {
+.footer__social-link:focus{
+  border: none;
+  outline: none;
+}
+.footer__social-link:focus svg {
   fill: #68A2CA;
 }
 
-.social-icons__item svg:focus {
-  fill: #68A2CA;
-}
-
-.social-icons__item svg:active {
+.footer__social-link:active svg{
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -650,7 +660,6 @@ html {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  margin-right: 235.5px;
 }
 
 .footer__tel:hover {
