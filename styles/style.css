@@ -2,7 +2,8 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("PT Sans"), url(../fonts/ptsans-400.woff2) format("woff2");
+  src: local("PT Sans"), url(../fonts/ptsans-400.woff2) format("woff2"),
+  url(../fonts/PTSans-Regular.woff) format("woff");
   font-display: swap;
 }
 
@@ -10,7 +11,8 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: local("PT Sans"), url(../fonts/ptsans-700.woff2) format("woff2");
+  src: local("PT Sans"), url(../fonts/ptsans-700.woff2) format("woff2"),
+  url(../fonts/PTSans-Bold.woff) format("woff");
   font-display: swap;
 }
 
@@ -136,12 +138,14 @@ html {
   align-items: center;
 }
 
-.header-search li{
+.header-search li {
   position: relative;
 }
-.header-search__item{
+
+.header-search__item {
   padding-left: 5px;
 }
+
 .search-link {
   text-decoration: none;
   width: 20px;
@@ -244,9 +248,31 @@ html {
   height: 485px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
-  background: url(../images/hero-pic.png);
+  background: url(../images/index-background.jpg);
+  position: relative;
+}
+
+.hero__welcome {
+  margin-top: 51.4px;
+}
+
+.hero__gorgeous {
+  margin: 11px;
+}
+
+.hero__sedona {
+  margin-top: 40px;
+}
+
+.divider {
+  background: url(../images/divider.png);
+  width: 1200px;
+  height: 57px;
+  position: absolute;
+  bottom: 0;
 }
 
 .hero__introduction {
@@ -797,8 +823,11 @@ html {
 }
 
 .look-form__field {
+  box-sizing: border-box;
   border: none;
   background: transparent;
+  height: 21px;
+  outline: none;
 }
 
 .look-form__field::placeholder {
@@ -807,11 +836,6 @@ html {
   font-weight: 400;
   font-size: 17px;
   line-height: 21px;
-}
-
-.look-form__field {
-  height: 21px;
-  outline: none;
 }
 
 .look-form__option-date {
@@ -825,6 +849,8 @@ html {
   box-sizing: border-box;
   padding: 17px 19px 12px 19px;
   justify-content: space-between;
+  border: 3px solid transparent;
+    
 }
 
 .look-form__option-date:hover {
@@ -903,7 +929,7 @@ html {
 
 .look-form__count::placeholder {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height: 40px;
   color: #000000;
