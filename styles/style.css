@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("PT Sans"), url(../fonts/ptsans-400.woff2) format("woff2"),
-  url(../fonts/PTSans-Regular.woff) format("woff");
+    url(../fonts/PTSans-Regular.woff) format("woff");
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 700;
   src: local("PT Sans"), url(../fonts/ptsans-700.woff2) format("woff2"),
-  url(../fonts/PTSans-Bold.woff) format("woff");
+    url(../fonts/PTSans-Bold.woff) format("woff");
   font-display: swap;
 }
 
@@ -108,7 +108,9 @@ html {
 }
 
 .header__link {
+  height: 65px;
   margin-right: 34px;
+  border-bottom: 2px solid transparent;
 }
 
 .header__link:last-child {
@@ -122,10 +124,12 @@ html {
   line-height: 26px;
   text-transform: capitalize;
   color: #000000;
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
-.header__link a:hover {
-  padding-bottom: 19px;
+.header__link:hover {
   border-bottom: 2px solid #756257;
 }
 
@@ -348,9 +352,6 @@ html {
 .benefits__pic-home {
   width: 75px;
   height: 72px;
-  background: url(../images/benef-home.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   margin-top: 80px;
   margin-bottom: 30px;
 }
@@ -360,9 +361,6 @@ html {
   height: 70px;
   margin-top: 81px;
   margin-bottom: 31px;
-  background: url(../images/food.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .benefits__pic-gift {
@@ -370,9 +368,6 @@ html {
   height: 76px;
   margin-top: 78px;
   margin-bottom: 28px;
-  background: url(../images/gift.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .benefits__title {
@@ -702,7 +697,6 @@ html {
 
 .footer__tel:active {
   color: rgba(117, 97, 87, 0.3);
-  ;
 }
 
 .html-link svg {
@@ -756,6 +750,7 @@ html {
 }
 
 .modal-search__title {
+  font-family: "PT sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -763,6 +758,8 @@ html {
   color: #000000;
   margin: 0;
   padding: 10px 0 0 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .modal-search__close-btn {
@@ -824,47 +821,60 @@ html {
 
 .look-form__field {
   box-sizing: border-box;
-  border: none;
   background: transparent;
-  height: 21px;
+  width: 420px;
+  height: 50px;
+  padding: 17px 0 12px 19px;
+  font-family: "PT sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  background: #F2F2F2;
+  border-radius: 4px;
   outline: none;
+  border: none;
+  box-shadow: 0 0 0 3px transparent;
 }
 
 .look-form__field::placeholder {
   color: #000;
+  font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 21px;
 }
 
+.look-form__field:hover {
+  background: #E6E6E6;
+}
+
+.look-form__field:focus {
+  box-shadow: 0 0 0 3px #83B3D3;
+  outline: none;
+  border: none;
+}
+
+.look-form__field:active {
+  box-shadow: 0 0 0 2px #000000;
+  background: #FFFFFF;
+}
+
 .look-form__option-date {
-  display: flex;
-  flex-direction: row;
-  background: #F2F2F2;
-  border-radius: 4px;
+  position: relative;
   width: 420px;
+}
+
+.calendar {
+  position: absolute;
   height: 50px;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 17px 19px 12px 19px;
-  justify-content: space-between;
-  border: 3px solid transparent;
-    
-}
-
-.look-form__option-date:hover {
-  background: #E6E6E6;
-}
-
-.look-form__option-date:focus-within {
-  background: #E6E6E6;
-  border: 3px solid #83B3D3;
-}
-
-.look-form__option-date:active {
-  background: #fff;
-  border: 2px solid #000000;
+  right: 12px;
+  top: 2px;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .look-form__message {
@@ -918,20 +928,22 @@ html {
 }
 
 .look-form__count {
-  width: 15px;
+  width: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   outline: none;
   background: transparent;
-}
-
-.look-form__count::placeholder {
+  font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 40px;
+  text-align: center;
+}
+
+.look-form__count::placeholder {
   color: #000000;
 }
 
