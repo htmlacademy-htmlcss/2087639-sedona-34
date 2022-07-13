@@ -259,16 +259,17 @@ html {
   position: relative;
 }
 
-.hero__welcome {
+.hero__image-wrapper::before {
+  content: '';
+  background: url(../images/divider.png);
+  width: 1200px;
+  height: 57px;
+  position: absolute;
+  bottom: 0;
+}
+
+.hero__picture {
   margin-top: 51.4px;
-}
-
-.hero__gorgeous {
-  margin: 11px;
-}
-
-.hero__sedona {
-  margin-top: 40px;
 }
 
 .divider {
@@ -632,7 +633,8 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
-  padding: 45px 70px 0 70px;
+  padding-left: 70px;
+  padding-right: 70px;
   align-items: center;
   justify-content: space-between;
 }
@@ -642,6 +644,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -651,7 +654,7 @@ html {
   align-items: center;
   justify-content: center;
   width: 47.33px;
-  height: 40px;
+  height: 120px;
 }
 
 .footer__social-link:hover svg {
@@ -675,6 +678,10 @@ html {
   fill: rgba(104, 162, 202, 0.3);
 }
 
+.address-tel {
+  height: 120px;
+}
+
 .footer__tel {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
@@ -685,6 +692,9 @@ html {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 120px;
 }
 
 .footer__tel:hover {
@@ -697,6 +707,16 @@ html {
 
 .footer__tel:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.footer__link {
+  height: 120px;
+}
+
+.html-link {
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .html-link svg {
@@ -1188,7 +1208,7 @@ html {
 .filter__form {
   display: flex;
   margin: 0;
-  padding: 0 0 60px 0;
+  padding: 0 0 56px 0;
 }
 
 .filter-catalog__group {
@@ -1540,7 +1560,9 @@ html {
   color: #FFFFFF;
   border: 3px solid transparent;
   background: rgba(0, 0, 0, 0);
-  margin-top: 17px;
+  margin-top: 5px;
+  width: 160px;
+  height: 48px;
   cursor: pointer;
   box-sizing: border-box;
 }
