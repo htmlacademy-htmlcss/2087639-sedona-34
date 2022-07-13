@@ -703,6 +703,8 @@ html {
 
 .footer__tel:focus {
   color: #756157;
+  outline: none;
+  border: none;
 }
 
 .footer__tel:active {
@@ -727,7 +729,15 @@ html {
   fill: #756157;
 }
 
-.html-link svg:focus {
+.footer__svg:focus {
+  fill: #756157;
+  border: none;
+  outline: none;
+}
+
+.html-link:focus{
+  border: none;
+  outline: none;
   fill: #756157;
 }
 
