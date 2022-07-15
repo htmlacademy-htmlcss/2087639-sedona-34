@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("PT Sans"), url("../fonts/PTSans-Regular.woff2") format("woff2"),
+  src: url("../fonts/PTSans-Regular.woff2") format("woff2"),
     url(../fonts/PTSans-Regular.woff) format("woff");
   font-display: swap;
 }
@@ -11,7 +11,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: local("PT Sans"), url("../fonts/PTSans-Bold.woff2") format("woff2"),
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
     url(../fonts/PTSans-Bold.woff) format("woff");
   font-display: swap;
 }
@@ -349,28 +349,6 @@ html {
   color: white;
 }
 
-
-.benefits__pic-home {
-  width: 75px;
-  height: 72px;
-  margin-top: 80px;
-  margin-bottom: 30px;
-}
-
-.benefits__pic-eat {
-  width: 74px;
-  height: 70px;
-  margin-top: 81px;
-  margin-bottom: 31px;
-}
-
-.benefits__pic-gift {
-  width: 64px;
-  height: 76px;
-  margin-top: 78px;
-  margin-bottom: 28px;
-}
-
 .benefits__title {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
@@ -383,6 +361,28 @@ html {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+}
+
+.benefits__title_indent {
+  padding-top: 182px;
+}
+
+.benefits__title_home {
+  background-image: url(../images/benef-home.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 80px;
+}
+
+.benefits__title_eat {
+  background-image: url(../images/food.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 81px;
+}
+
+.benefits__title_gift {
+  background-image: url(../images/gift.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 78px;
 }
 
 .benefits__number {
@@ -735,7 +735,7 @@ html {
   outline: none;
 }
 
-.html-link:focus{
+.html-link:focus {
   border: none;
   outline: none;
   fill: #756157;
